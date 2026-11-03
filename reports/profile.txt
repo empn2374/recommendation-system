@@ -1,0 +1,815 @@
+ROWS 1,000,123  COLS 62
+
+== NULLS / UNIQUE / DTYPE ==
+shape: (62, 5)
+┌──────────────────────────┬─────────┬────────┬──────────┬──────────┐
+│ col                      ┆ dtype   ┆ nulls  ┆ null_pct ┆ n_unique │
+│ ---                      ┆ ---     ┆ ---    ┆ ---      ┆ ---      │
+│ str                      ┆ str     ┆ i64    ┆ f64      ┆ i64      │
+╞══════════════════════════╪═════════╪════════╪══════════╪══════════╡
+│ order_id                 ┆ String  ┆ 0      ┆ 0.0      ┆ 991930   │
+│ order_date               ┆ String  ┆ 0      ┆ 0.0      ┆ 1000123  │
+│ order_year               ┆ Int64   ┆ 0      ┆ 0.0      ┆ 3        │
+│ order_month              ┆ Int64   ┆ 0      ┆ 0.0      ┆ 12       │
+│ order_day                ┆ Int64   ┆ 0      ┆ 0.0      ┆ 31       │
+│ order_hour               ┆ Int64   ┆ 0      ┆ 0.0      ┆ 24       │
+│ order_minute             ┆ Int64   ┆ 0      ┆ 0.0      ┆ 60       │
+│ order_second             ┆ Int64   ┆ 0      ┆ 0.0      ┆ 60       │
+│ is_weekend               ┆ String  ┆ 0      ┆ 0.0      ┆ 2        │
+│ order_status             ┆ String  ┆ 0      ┆ 0.0      ┆ 5        │
+│ return_reason            ┆ String  ┆ 900244 ┆ 90.01    ┆ 6        │
+│ customer_id              ┆ String  ┆ 0      ┆ 0.0      ┆ 991945   │
+│ customer_name            ┆ String  ┆ 0      ┆ 0.0      ┆ 330156   │
+│ gender                   ┆ String  ┆ 0      ┆ 0.0      ┆ 2        │
+│ age                      ┆ Int64   ┆ 0      ┆ 0.0      ┆ 58       │
+│ customer_segment         ┆ String  ┆ 0      ┆ 0.0      ┆ 3        │
+│ country                  ┆ String  ┆ 0      ┆ 0.0      ┆ 10       │
+│ city                     ┆ String  ┆ 0      ┆ 0.0      ┆ 50       │
+│ customer_loyalty_score   ┆ Float64 ┆ 0      ┆ 0.0      ┆ 1001     │
+│ total_orders_by_customer ┆ Int64   ┆ 0      ┆ 0.0      ┆ 50       │
+│ account_creation_date    ┆ String  ┆ 0      ┆ 0.0      ┆ 1826     │
+│ product_id               ┆ String  ┆ 0      ┆ 0.0      ┆ 753516   │
+│ product_name             ┆ String  ┆ 0      ┆ 0.0      ┆ 48       │
+│ category                 ┆ String  ┆ 0      ┆ 0.0      ┆ 5        │
+│ sub_category             ┆ String  ┆ 0      ┆ 0.0      ┆ 22       │
+│ brand                    ┆ String  ┆ 0      ┆ 0.0      ┆ 20       │
+│ product_rating_avg       ┆ Float64 ┆ 0      ┆ 0.0      ┆ 21       │
+│ product_reviews_count    ┆ Int64   ┆ 0      ┆ 0.0      ┆ 5001     │
+│ stock_quantity           ┆ Int64   ┆ 0      ┆ 0.0      ┆ 1001     │
+│ unit_price_usd           ┆ Float64 ┆ 0      ┆ 0.0      ┆ 48694    │
+│ quantity                 ┆ Int64   ┆ 0      ┆ 0.0      ┆ 5        │
+│ discount_percent         ┆ Int64   ┆ 0      ┆ 0.0      ┆ 6        │
+│ discount_amount_usd      ┆ Float64 ┆ 0      ┆ 0.0      ┆ 33255    │
+│ total_price_usd          ┆ Float64 ┆ 0      ┆ 0.0      ┆ 139526   │
+│ cost_usd                 ┆ Float64 ┆ 0      ┆ 0.0      ┆ 84891    │
+│ profit_usd               ┆ Float64 ┆ 0      ┆ 0.0      ┆ 74998    │
+│ tax_usd                  ┆ Float64 ┆ 0      ┆ 0.0      ┆ 19017    │
+│ currency                 ┆ String  ┆ 0      ┆ 0.0      ┆ 1        │
+│ payment_method           ┆ String  ┆ 0      ┆ 0.0      ┆ 5        │
+│ payment_status           ┆ String  ┆ 0      ┆ 0.0      ┆ 3        │
+│ installment_plan         ┆ String  ┆ 0      ┆ 0.0      ┆ 2        │
+│ shipping_method          ┆ String  ┆ 0      ┆ 0.0      ┆ 4        │
+│ shipping_cost_usd        ┆ Float64 ┆ 0      ┆ 0.0      ┆ 2501     │
+│ delivery_days            ┆ Int64   ┆ 0      ┆ 0.0      ┆ 14       │
+│ shipping_country         ┆ String  ┆ 0      ┆ 0.0      ┆ 10       │
+│ warehouse_location       ┆ String  ┆ 0      ┆ 0.0      ┆ 5        │
+│ delivery_status          ┆ String  ┆ 0      ┆ 0.0      ┆ 4        │
+│ rating                   ┆ Int64   ┆ 0      ┆ 0.0      ┆ 5        │
+│ review_sentiment         ┆ String  ┆ 0      ┆ 0.0      ┆ 3        │
+│ customer_feedback        ┆ String  ┆ 199617 ┆ 19.96    ┆ 9        │
+│ coupon_used              ┆ String  ┆ 0      ┆ 0.0      ┆ 2        │
+│ coupon_code              ┆ String  ┆ 500083 ┆ 50.0     ┆ 46657    │
+│ campaign_source          ┆ String  ┆ 0      ┆ 0.0      ┆ 6        │
+│ device_type              ┆ String  ┆ 0      ┆ 0.0      ┆ 3        │
+│ traffic_source           ┆ String  ┆ 0      ┆ 0.0      ┆ 5        │
+│ session_duration_minutes ┆ Float64 ┆ 0      ┆ 0.0      ┆ 591      │
+│ pages_visited            ┆ Int64   ┆ 0      ┆ 0.0      ┆ 20       │
+│ abandoned_cart_before    ┆ String  ┆ 0      ┆ 0.0      ┆ 2        │
+│ fraud_risk_score         ┆ Float64 ┆ 0      ┆ 0.0      ┆ 1001     │
+│ profit_margin_percent    ┆ Float64 ┆ 0      ┆ 0.0      ┆ 5337     │
+│ order_priority           ┆ String  ┆ 0      ┆ 0.0      ┆ 3        │
+│ support_ticket_created   ┆ String  ┆ 0      ┆ 0.0      ┆ 2        │
+└──────────────────────────┴─────────┴────────┴──────────┴──────────┘
+
+== GRAIN / KEYS ==
+distinct order_id: 991930 | full-row duplicates: 0
+distinct customers: 991945 | products: 753516
+orders/customer describe:
+ shape: (9, 2)
+┌────────────┬──────────┐
+│ statistic  ┆ value    │
+│ ---        ┆ ---      │
+│ str        ┆ f64      │
+╞════════════╪══════════╡
+│ count      ┆ 991945.0 │
+│ null_count ┆ 0.0      │
+│ mean       ┆ 1.008244 │
+│ std        ┆ 0.090968 │
+│ min        ┆ 1.0      │
+│ 25%        ┆ 1.0      │
+│ 50%        ┆ 1.0      │
+│ 75%        ┆ 1.0      │
+│ max        ┆ 3.0      │
+└────────────┴──────────┘
+rows/product describe:
+ shape: (9, 2)
+┌────────────┬──────────┐
+│ statistic  ┆ value    │
+│ ---        ┆ ---      │
+│ str        ┆ f64      │
+╞════════════╪══════════╡
+│ count      ┆ 753516.0 │
+│ null_count ┆ 0.0      │
+│ mean       ┆ 1.327275 │
+│ std        ┆ 0.596657 │
+│ min        ┆ 1.0      │
+│ 25%        ┆ 1.0      │
+│ 50%        ┆ 1.0      │
+│ 75%        ┆ 2.0      │
+│ max        ┆ 8.0      │
+└────────────┴──────────┘
+order_id rows with count>1: 8140
+
+== LOW-CARDINALITY VALUE COUNTS ==
+
+-- is_weekend
+shape: (2, 2)
+┌────────────┬────────┐
+│ is_weekend ┆ count  │
+│ ---        ┆ ---    │
+│ str        ┆ u32    │
+╞════════════╪════════╡
+│ No         ┆ 713021 │
+│ Yes        ┆ 287102 │
+└────────────┴────────┘
+
+-- order_status
+shape: (5, 2)
+┌──────────────┬────────┐
+│ order_status ┆ count  │
+│ ---          ┆ ---    │
+│ str          ┆ u32    │
+╞══════════════╪════════╡
+│ Completed    ┆ 700232 │
+│ Returned     ┆ 99879  │
+│ Pending      ┆ 99748  │
+│ Cancelled    ┆ 50163  │
+│ Processing   ┆ 50101  │
+└──────────────┴────────┘
+
+-- return_reason
+shape: (6, 2)
+┌────────────────────────┬────────┐
+│ return_reason          ┆ count  │
+│ ---                    ┆ ---    │
+│ str                    ┆ u32    │
+╞════════════════════════╪════════╡
+│ null                   ┆ 900244 │
+│ Wrong Item             ┆ 20061  │
+│ Defective Product      ┆ 20024  │
+│ Better Price Elsewhere ┆ 19994  │
+│ Changed Mind           ┆ 19993  │
+│ Not As Described       ┆ 19807  │
+└────────────────────────┴────────┘
+
+-- gender
+shape: (2, 2)
+┌────────┬────────┐
+│ gender ┆ count  │
+│ ---    ┆ ---    │
+│ str    ┆ u32    │
+╞════════╪════════╡
+│ Male   ┆ 500180 │
+│ Female ┆ 499943 │
+└────────┴────────┘
+
+-- customer_segment
+shape: (3, 2)
+┌──────────────────┬────────┐
+│ customer_segment ┆ count  │
+│ ---              ┆ ---    │
+│ str              ┆ u32    │
+╞══════════════════╪════════╡
+│ Regular          ┆ 599295 │
+│ Premium          ┆ 300404 │
+│ VIP              ┆ 100424 │
+└──────────────────┴────────┘
+
+-- country
+shape: (10, 2)
+┌────────────────┬────────┐
+│ country        ┆ count  │
+│ ---            ┆ ---    │
+│ str            ┆ u32    │
+╞════════════════╪════════╡
+│ Netherlands    ┆ 100548 │
+│ Belgium        ┆ 100357 │
+│ France         ┆ 100147 │
+│ United Kingdom ┆ 100064 │
+│ Spain          ┆ 100041 │
+│ Canada         ┆ 100023 │
+│ Australia      ┆ 99774  │
+│ Italy          ┆ 99761  │
+│ United States  ┆ 99742  │
+│ Germany        ┆ 99666  │
+└────────────────┴────────┘
+
+-- category
+shape: (5, 2)
+┌─────────────┬────────┐
+│ category    ┆ count  │
+│ ---         ┆ ---    │
+│ str         ┆ u32    │
+╞═════════════╪════════╡
+│ Home        ┆ 200589 │
+│ Sports      ┆ 200397 │
+│ Electronics ┆ 200019 │
+│ Health      ┆ 199574 │
+│ Clothing    ┆ 199544 │
+└─────────────┴────────┘
+
+-- sub_category
+shape: (22, 2)
+┌─────────────────┬────────┐
+│ sub_category    ┆ count  │
+│ ---             ┆ ---    │
+│ str             ┆ u32    │
+╞═════════════════╪════════╡
+│ Accessories     ┆ 123702 │
+│ Supplements     ┆ 50142  │
+│ Gym Equipment   ┆ 50141  │
+│ Personal Care   ┆ 50039  │
+│ Sports Wear     ┆ 49957  │
+│ Medical Devices ┆ 49826  │
+│ Outdoor         ┆ 49816  │
+│ Fitness         ┆ 49567  │
+│ Decor           ┆ 40507  │
+│ Kitchen         ┆ 40242  │
+│ Furniture       ┆ 40147  │
+│ Bedding         ┆ 40105  │
+│ Shoes           ┆ 40036  │
+│ Mens Wear       ┆ 39909  │
+│ Womens Wear     ┆ 39885  │
+│ Kids Wear       ┆ 39789  │
+│ Appliances      ┆ 39588  │
+│ Cameras         ┆ 33515  │
+│ Tablets         ┆ 33373  │
+│ Audio           ┆ 33340  │
+│ Smartphones     ┆ 33265  │
+│ Laptops         ┆ 33232  │
+└─────────────────┴────────┘
+
+-- brand
+shape: (20, 2)
+┌──────────┬───────┐
+│ brand    ┆ count │
+│ ---      ┆ ---   │
+│ str      ┆ u32   │
+╞══════════╪═══════╡
+│ Dell     ┆ 50436 │
+│ Sony     ┆ 50299 │
+│ Philips  ┆ 50293 │
+│ GoPro    ┆ 50293 │
+│ Fitbit   ┆ 50202 │
+│ Xiaomi   ┆ 50088 │
+│ Huawei   ┆ 50045 │
+│ Anker    ┆ 50004 │
+│ Apple    ┆ 49997 │
+│ JBL      ┆ 49976 │
+│ Asus     ┆ 49934 │
+│ Nike     ┆ 49919 │
+│ Samsung  ┆ 49914 │
+│ Baseus   ┆ 49879 │
+│ Adidas   ┆ 49862 │
+│ Lenovo   ┆ 49843 │
+│ HP       ┆ 49826 │
+│ Nikon    ┆ 49794 │
+│ Canon    ┆ 49761 │
+│ Logitech ┆ 49758 │
+└──────────┴───────┘
+
+-- currency
+shape: (1, 2)
+┌──────────┬─────────┐
+│ currency ┆ count   │
+│ ---      ┆ ---     │
+│ str      ┆ u32     │
+╞══════════╪═════════╡
+│ USD      ┆ 1000123 │
+└──────────┴─────────┘
+
+-- payment_method
+shape: (5, 2)
+┌────────────────┬────────┐
+│ payment_method ┆ count  │
+│ ---            ┆ ---    │
+│ str            ┆ u32    │
+╞════════════════╪════════╡
+│ Debit Card     ┆ 200805 │
+│ Bank Transfer  ┆ 200213 │
+│ PayPal         ┆ 199881 │
+│ Apple Pay      ┆ 199814 │
+│ Credit Card    ┆ 199410 │
+└────────────────┴────────┘
+
+-- payment_status
+shape: (3, 2)
+┌────────────────┬────────┐
+│ payment_status ┆ count  │
+│ ---            ┆ ---    │
+│ str            ┆ u32    │
+╞════════════════╪════════╡
+│ Paid           ┆ 900146 │
+│ Pending        ┆ 50005  │
+│ Failed         ┆ 49972  │
+└────────────────┴────────┘
+
+-- installment_plan
+shape: (2, 2)
+┌──────────────────┬────────┐
+│ installment_plan ┆ count  │
+│ ---              ┆ ---    │
+│ str              ┆ u32    │
+╞══════════════════╪════════╡
+│ No               ┆ 581436 │
+│ Yes              ┆ 418687 │
+└──────────────────┴────────┘
+
+-- shipping_method
+shape: (4, 2)
+┌─────────────────┬────────┐
+│ shipping_method ┆ count  │
+│ ---             ┆ ---    │
+│ str             ┆ u32    │
+╞═════════════════╪════════╡
+│ Next Day        ┆ 250500 │
+│ Standard        ┆ 250261 │
+│ Economy         ┆ 249777 │
+│ Express         ┆ 249585 │
+└─────────────────┴────────┘
+
+-- shipping_country
+shape: (10, 2)
+┌──────────────────┬────────┐
+│ shipping_country ┆ count  │
+│ ---              ┆ ---    │
+│ str              ┆ u32    │
+╞══════════════════╪════════╡
+│ Netherlands      ┆ 100548 │
+│ Belgium          ┆ 100357 │
+│ France           ┆ 100147 │
+│ United Kingdom   ┆ 100064 │
+│ Spain            ┆ 100041 │
+│ Canada           ┆ 100023 │
+│ Australia        ┆ 99774  │
+│ Italy            ┆ 99761  │
+│ United States    ┆ 99742  │
+│ Germany          ┆ 99666  │
+└──────────────────┴────────┘
+
+-- warehouse_location
+shape: (5, 2)
+┌────────────────────┬────────┐
+│ warehouse_location ┆ count  │
+│ ---                ┆ ---    │
+│ str                ┆ u32    │
+╞════════════════════╪════════╡
+│ Asia-Pacific       ┆ 200367 │
+│ UK                 ┆ 200227 │
+│ EU-Central         ┆ 200028 │
+│ USA-West           ┆ 199841 │
+│ USA-East           ┆ 199660 │
+└────────────────────┴────────┘
+
+-- delivery_status
+shape: (4, 2)
+┌─────────────────┬────────┐
+│ delivery_status ┆ count  │
+│ ---             ┆ ---    │
+│ str             ┆ u32    │
+╞═════════════════╪════════╡
+│ Delivered       ┆ 750804 │
+│ In Transit      ┆ 149551 │
+│ Failed          ┆ 49994  │
+│ Pending         ┆ 49774  │
+└─────────────────┴────────┘
+
+-- review_sentiment
+shape: (3, 2)
+┌──────────────────┬────────┐
+│ review_sentiment ┆ count  │
+│ ---              ┆ ---    │
+│ str              ┆ u32    │
+╞══════════════════╪════════╡
+│ Negative         ┆ 400207 │
+│ Positive         ┆ 400090 │
+│ Neutral          ┆ 199826 │
+└──────────────────┴────────┘
+
+-- customer_feedback
+shape: (9, 2)
+┌──────────────────────┬────────┐
+│ customer_feedback    ┆ count  │
+│ ---                  ┆ ---    │
+│ str                  ┆ u32    │
+╞══════════════════════╪════════╡
+│ null                 ┆ 199617 │
+│ Could be better      ┆ 100591 │
+│ Excellent!           ┆ 100325 │
+│ Highly recommended   ┆ 100315 │
+│ Average quality      ┆ 100148 │
+│ Fast delivery        ┆ 100111 │
+│ Not satisfied        ┆ 99971  │
+│ Great product!       ┆ 99538  │
+│ Good value for money ┆ 99507  │
+└──────────────────────┴────────┘
+
+-- coupon_used
+shape: (2, 2)
+┌─────────────┬────────┐
+│ coupon_used ┆ count  │
+│ ---         ┆ ---    │
+│ str         ┆ u32    │
+╞═════════════╪════════╡
+│ No          ┆ 500083 │
+│ Yes         ┆ 500040 │
+└─────────────┴────────┘
+
+-- campaign_source
+shape: (6, 2)
+┌─────────────────┬────────┐
+│ campaign_source ┆ count  │
+│ ---             ┆ ---    │
+│ str             ┆ u32    │
+╞═════════════════╪════════╡
+│ Organic         ┆ 167251 │
+│ Facebook        ┆ 167023 │
+│ Google Ads      ┆ 166783 │
+│ Instagram       ┆ 166524 │
+│ Email           ┆ 166456 │
+│ Affiliate       ┆ 166086 │
+└─────────────────┴────────┘
+
+-- device_type
+shape: (3, 2)
+┌─────────────┬────────┐
+│ device_type ┆ count  │
+│ ---         ┆ ---    │
+│ str         ┆ u32    │
+╞═════════════╪════════╡
+│ Tablet      ┆ 334820 │
+│ Desktop     ┆ 333056 │
+│ Mobile      ┆ 332247 │
+└─────────────┴────────┘
+
+-- traffic_source
+shape: (5, 2)
+┌────────────────┬────────┐
+│ traffic_source ┆ count  │
+│ ---            ┆ ---    │
+│ str            ┆ u32    │
+╞════════════════╪════════╡
+│ Social         ┆ 200316 │
+│ Email          ┆ 200122 │
+│ Referral       ┆ 199913 │
+│ Search         ┆ 199903 │
+│ Direct         ┆ 199869 │
+└────────────────┴────────┘
+
+-- abandoned_cart_before
+shape: (2, 2)
+┌───────────────────────┬────────┐
+│ abandoned_cart_before ┆ count  │
+│ ---                   ┆ ---    │
+│ str                   ┆ u32    │
+╞═══════════════════════╪════════╡
+│ Yes                   ┆ 500471 │
+│ No                    ┆ 499652 │
+└───────────────────────┴────────┘
+
+-- order_priority
+shape: (3, 2)
+┌────────────────┬────────┐
+│ order_priority ┆ count  │
+│ ---            ┆ ---    │
+│ str            ┆ u32    │
+╞════════════════╪════════╡
+│ Low            ┆ 333899 │
+│ High           ┆ 333716 │
+│ Medium         ┆ 332508 │
+└────────────────┴────────┘
+
+-- support_ticket_created
+shape: (2, 2)
+┌────────────────────────┬────────┐
+│ support_ticket_created ┆ count  │
+│ ---                    ┆ ---    │
+│ str                    ┆ u32    │
+╞════════════════════════╪════════╡
+│ No                     ┆ 500237 │
+│ Yes                    ┆ 499886 │
+└────────────────────────┴────────┘
+
+-- order_year
+shape: (3, 2)
+┌────────────┬────────┐
+│ order_year ┆ count  │
+│ ---        ┆ ---    │
+│ i64        ┆ u32    │
+╞════════════╪════════╡
+│ 2024       ┆ 455249 │
+│ 2025       ┆ 500026 │
+│ 2026       ┆ 44848  │
+└────────────┴────────┘
+
+-- order_month
+shape: (12, 2)
+┌─────────────┬───────┐
+│ order_month ┆ count │
+│ ---         ┆ ---   │
+│ i64         ┆ u32   │
+╞═════════════╪═══════╡
+│ 1           ┆ 85100 │
+│ 2           ┆ 77685 │
+│ 3           ┆ 85079 │
+│ 4           ┆ 82436 │
+│ 5           ┆ 85100 │
+│ 6           ┆ 81699 │
+│ 7           ┆ 85029 │
+│ 8           ┆ 84799 │
+│ 9           ┆ 82005 │
+│ 10          ┆ 84848 │
+│ 11          ┆ 81731 │
+│ 12          ┆ 84612 │
+└─────────────┴───────┘
+
+-- discount_percent
+shape: (6, 2)
+┌──────────────────┬────────┐
+│ discount_percent ┆ count  │
+│ ---              ┆ ---    │
+│ i64              ┆ u32    │
+╞══════════════════╪════════╡
+│ 0                ┆ 299841 │
+│ 5                ┆ 199946 │
+│ 10               ┆ 200397 │
+│ 15               ┆ 150227 │
+│ 20               ┆ 99766  │
+│ 25               ┆ 49946  │
+└──────────────────┴────────┘
+
+-- rating
+shape: (5, 2)
+┌────────┬────────┐
+│ rating ┆ count  │
+│ ---    ┆ ---    │
+│ i64    ┆ u32    │
+╞════════╪════════╡
+│ 1      ┆ 200399 │
+│ 2      ┆ 199808 │
+│ 3      ┆ 199826 │
+│ 4      ┆ 199790 │
+│ 5      ┆ 200300 │
+└────────┴────────┘
+
+-- order_hour
+shape: (24, 2)
+┌────────────┬───────┐
+│ order_hour ┆ count │
+│ ---        ┆ ---   │
+│ i64        ┆ u32   │
+╞════════════╪═══════╡
+│ 0          ┆ 41439 │
+│ 1          ┆ 41860 │
+│ 2          ┆ 41719 │
+│ 3          ┆ 41851 │
+│ 4          ┆ 41480 │
+│ 5          ┆ 41896 │
+│ 6          ┆ 41712 │
+│ 7          ┆ 41871 │
+│ 8          ┆ 41844 │
+│ 9          ┆ 42068 │
+│ 10         ┆ 41571 │
+│ 11         ┆ 41812 │
+│ 12         ┆ 41789 │
+│ 13         ┆ 41344 │
+│ 14         ┆ 41509 │
+│ 15         ┆ 41933 │
+│ 16         ┆ 41640 │
+│ 17         ┆ 41394 │
+│ 18         ┆ 41508 │
+│ 19         ┆ 41819 │
+│ 20         ┆ 41589 │
+│ 21         ┆ 41517 │
+│ 22         ┆ 41450 │
+│ 23         ┆ 41508 │
+└────────────┴───────┘
+
+== NUMERIC DESCRIBE ==
+shape: (9, 28)
+┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬───┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
+│ sta ┆ ord ┆ ord ┆ ord ┆ ord ┆ ord ┆ ord ┆ age ┆ cus ┆ tot ┆ … ┆ cos ┆ pro ┆ tax ┆ shi ┆ del ┆ rat ┆ ses ┆ pag ┆ fra ┆ pro │
+│ tis ┆ er_ ┆ er_ ┆ er_ ┆ er_ ┆ er_ ┆ er_ ┆ --- ┆ tom ┆ al_ ┆   ┆ t_u ┆ fit ┆ _us ┆ ppi ┆ ive ┆ ing ┆ sio ┆ es_ ┆ ud_ ┆ fit │
+│ tic ┆ yea ┆ mon ┆ day ┆ hou ┆ min ┆ sec ┆ f64 ┆ er_ ┆ ord ┆   ┆ sd  ┆ _us ┆ d   ┆ ng_ ┆ ry_ ┆ --- ┆ n_d ┆ vis ┆ ris ┆ _ma │
+│ --- ┆ r   ┆ th  ┆ --- ┆ r   ┆ ute ┆ ond ┆     ┆ loy ┆ ers ┆   ┆ --- ┆ d   ┆ --- ┆ cos ┆ day ┆ f64 ┆ ura ┆ ite ┆ k_s ┆ rgi │
+│ str ┆ --- ┆ --- ┆ f64 ┆ --- ┆ --- ┆ --- ┆     ┆ alt ┆ _by ┆   ┆ f64 ┆ --- ┆ f64 ┆ t_u ┆ s   ┆     ┆ tio ┆ d   ┆ cor ┆ n_p │
+│     ┆ f64 ┆ f64 ┆     ┆ f64 ┆ f64 ┆ f64 ┆     ┆ y_s ┆ _cu ┆   ┆     ┆ f64 ┆     ┆ sd  ┆ --- ┆     ┆ n_m ┆ --- ┆ e   ┆ erc │
+│     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆ cor ┆ sto ┆   ┆     ┆     ┆     ┆ --- ┆ f64 ┆     ┆ inu ┆ f64 ┆ --- ┆ ent │
+│     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆ e   ┆ mer ┆   ┆     ┆     ┆     ┆ f64 ┆     ┆     ┆ tes ┆     ┆ f64 ┆ --- │
+│     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆ --- ┆ --- ┆   ┆     ┆     ┆     ┆     ┆     ┆     ┆ --- ┆     ┆     ┆ f64 │
+│     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆ f64 ┆ f64 ┆   ┆     ┆     ┆     ┆     ┆     ┆     ┆ f64 ┆     ┆     ┆     │
+╞═════╪═════╪═════╪═════╪═════╪═════╪═════╪═════╪═════╪═════╪═══╪═════╪═════╪═════╪═════╪═════╪═════╪═════╪═════╪═════╪═════╡
+│ cou ┆ 1.0 ┆ 1.0 ┆ 1.0 ┆ 1.0 ┆ 1.0 ┆ 1.0 ┆ 1.0 ┆ 1.0 ┆ 1.0 ┆ … ┆ 1.0 ┆ 1.0 ┆ 1.0 ┆ 1.0 ┆ 1.0 ┆ 1.0 ┆ 1.0 ┆ 1.0 ┆ 1.0 ┆ 1.0 │
+│ nt  ┆ 001 ┆ 001 ┆ 001 ┆ 001 ┆ 001 ┆ 001 ┆ 001 ┆ 001 ┆ 001 ┆   ┆ 001 ┆ 001 ┆ 001 ┆ 001 ┆ 001 ┆ 001 ┆ 001 ┆ 001 ┆ 001 ┆ 001 │
+│     ┆ 23e ┆ 23e ┆ 23e ┆ 23e ┆ 23e ┆ 23e ┆ 23e ┆ 23e ┆ 23e ┆   ┆ 23e ┆ 23e ┆ 23e ┆ 23e ┆ 23e ┆ 23e ┆ 23e ┆ 23e ┆ 23e ┆ 23e │
+│     ┆ 6   ┆ 6   ┆ 6   ┆ 6   ┆ 6   ┆ 6   ┆ 6   ┆ 6   ┆ 6   ┆   ┆ 6   ┆ 6   ┆ 6   ┆ 6   ┆ 6   ┆ 6   ┆ 6   ┆ 6   ┆ 6   ┆ 6   │
+│ nul ┆ 0.0 ┆ 0.0 ┆ 0.0 ┆ 0.0 ┆ 0.0 ┆ 0.0 ┆ 0.0 ┆ 0.0 ┆ 0.0 ┆ … ┆ 0.0 ┆ 0.0 ┆ 0.0 ┆ 0.0 ┆ 0.0 ┆ 0.0 ┆ 0.0 ┆ 0.0 ┆ 0.0 ┆ 0.0 │
+│ l_c ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆   ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     │
+│ oun ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆   ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     │
+│ t   ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆   ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     │
+│ mea ┆ 202 ┆ 6.5 ┆ 15. ┆ 11. ┆ 29. ┆ 29. ┆ 46. ┆ 49. ┆ 25. ┆ … ┆ 242 ┆ 160 ┆ 30. ┆ 12. ┆ 7.5 ┆ 2.9 ┆ 30. ┆ 10. ┆ 49. ┆ 39. │
+│ n   ┆ 4.5 ┆ 148 ┆ 752 ┆ 488 ┆ 494 ┆ 485 ┆ 494 ┆ 972 ┆ 486 ┆   ┆ .30 ┆ .92 ┆ 251 ┆ 504 ┆ 066 ┆ 997 ┆ 510 ┆ 506 ┆ 961 ┆ 465 │
+│     ┆ 896 ┆ 49  ┆ 525 ┆ 138 ┆ 67  ┆ 479 ┆ 138 ┆ 525 ┆ 995 ┆   ┆ 924 ┆ 701 ┆ 568 ┆ 447 ┆ 48  ┆ 84  ┆ 335 ┆ 094 ┆ 611 ┆ 17  │
+│     ┆ 49  ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆   ┆     ┆ 9   ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     │
+│ std ┆ 0.5 ┆ 3.4 ┆ 8.7 ┆ 6.9 ┆ 17. ┆ 17. ┆ 16. ┆ 28. ┆ 14. ┆ … ┆ 226 ┆ 161 ┆ 28. ┆ 7.2 ┆ 4.0 ┆ 1.4 ┆ 17. ┆ 5.7 ┆ 28. ┆ 10. │
+│     ┆ 758 ┆ 487 ┆ 997 ┆ 180 ┆ 309 ┆ 327 ┆ 733 ┆ 893 ┆ 434 ┆   ┆ .71 ┆ .93 ┆ 891 ┆ 164 ┆ 329 ┆ 149 ┆ 033 ┆ 662 ┆ 847 ┆ 941 │
+│     ┆ 89  ┆ 11  ┆ 9   ┆ 78  ┆ 842 ┆ 808 ┆ 727 ┆ 766 ┆ 213 ┆   ┆ 568 ┆ 014 ┆ 522 ┆ 16  ┆ 3   ┆ 73  ┆ 683 ┆ 07  ┆ 705 ┆ 308 │
+│     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆   ┆ 7   ┆ 9   ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     │
+│ min ┆ 202 ┆ 1.0 ┆ 1.0 ┆ 0.0 ┆ 0.0 ┆ 0.0 ┆ 18. ┆ 0.0 ┆ 1.0 ┆ … ┆ 4.0 ┆ 0.7 ┆ 0.4 ┆ 0.0 ┆ 1.0 ┆ 1.0 ┆ 1.0 ┆ 1.0 ┆ 0.0 ┆ 6.6 │
+│     ┆ 4.0 ┆     ┆     ┆     ┆     ┆     ┆ 0   ┆     ┆     ┆   ┆ 3   ┆     ┆ 3   ┆     ┆     ┆     ┆     ┆     ┆     ┆ 6   │
+│ 25% ┆ 202 ┆ 4.0 ┆ 8.0 ┆ 5.0 ┆ 14. ┆ 14. ┆ 32. ┆ 24. ┆ 13. ┆ … ┆ 82. ┆ 50. ┆ 10. ┆ 6.2 ┆ 4.0 ┆ 2.0 ┆ 15. ┆ 6.0 ┆ 25. ┆ 31. │
+│     ┆ 4.0 ┆     ┆     ┆     ┆ 0   ┆ 0   ┆ 0   ┆ 9   ┆ 0   ┆   ┆ 45  ┆ 69  ┆ 12  ┆ 6   ┆     ┆     ┆ 7   ┆     ┆ 0   ┆ 69  │
+│ 50% ┆ 202 ┆ 7.0 ┆ 16. ┆ 11. ┆ 30. ┆ 29. ┆ 46. ┆ 50. ┆ 25. ┆ … ┆ 172 ┆ 108 ┆ 21. ┆ 12. ┆ 8.0 ┆ 3.0 ┆ 30. ┆ 11. ┆ 50. ┆ 39. │
+│     ┆ 5.0 ┆     ┆ 0   ┆ 0   ┆ 0   ┆ 0   ┆ 0   ┆ 0   ┆ 0   ┆   ┆ .53 ┆ .79 ┆ 28  ┆ 5   ┆     ┆     ┆ 5   ┆ 0   ┆ 0   ┆ 9   │
+│ 75% ┆ 202 ┆ 10. ┆ 23. ┆ 17. ┆ 44. ┆ 44. ┆ 61. ┆ 75. ┆ 38. ┆ … ┆ 326 ┆ 214 ┆ 40. ┆ 18. ┆ 11. ┆ 4.0 ┆ 45. ┆ 16. ┆ 74. ┆ 48. │
+│     ┆ 5.0 ┆ 0   ┆ 0   ┆ 0   ┆ 0   ┆ 0   ┆ 0   ┆ 0   ┆ 0   ┆   ┆ .45 ┆ .64 ┆ 59  ┆ 74  ┆ 0   ┆     ┆ 3   ┆ 0   ┆ 9   ┆ 17  │
+│ max ┆ 202 ┆ 12. ┆ 31. ┆ 23. ┆ 59. ┆ 59. ┆ 75. ┆ 100 ┆ 50. ┆ … ┆ 174 ┆ 149 ┆ 245 ┆ 25. ┆ 14. ┆ 5.0 ┆ 60. ┆ 20. ┆ 100 ┆ 60. │
+│     ┆ 6.0 ┆ 0   ┆ 0   ┆ 0   ┆ 0   ┆ 0   ┆ 0   ┆ .0  ┆ 0   ┆   ┆ 3.7 ┆ 5.7 ┆ .59 ┆ 0   ┆ 0   ┆     ┆ 0   ┆ 0   ┆ .0  ┆ 02  │
+│     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆   ┆     ┆ 5   ┆     ┆     ┆     ┆     ┆     ┆     ┆     ┆     │
+└─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴───┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
+
+== DATES ==
+order_date range: 2024-02-03 04:31:57.621140 2026-02-02 16:03:01.727725 unparsed: 0
+account_creation range: 2021-02-01 2026-01-31 unparsed: 0
+orders before account creation: 0
+
+== CONSISTENCY ==
+total_price != unit*qty-discount (>0.05): 0
+profit != total-cost (>0.05): 0
+negative profit rows: 0
+margin% != profit/total*100 (>0.1): 0
+non-positive qty/price: 0
+rating outside 1..5: 0
+
+== PRODUCT / CUSTOMER ATTRIBUTE STABILITY (should be 1 per id) ==
+product_id->product_name: ids with >1 value = 198,892 / 753,516
+product_id->category: ids with >1 value = 168,150 / 753,516
+product_id->sub_category: ids with >1 value = 193,650 / 753,516
+product_id->brand: ids with >1 value = 194,144 / 753,516
+product_id->unit_price_usd: ids with >1 value = 202,429 / 753,516
+product_id->product_rating_avg: ids with >1 value = 194,306 / 753,516
+product_id->stock_quantity: ids with >1 value = 202,263 / 753,516
+product_id->cost_usd: ids with >1 value = 202,430 / 753,516
+customer_id->customer_name: ids with >1 value = 8,128 / 991,945
+customer_id->gender: ids with >1 value = 4,044 / 991,945
+customer_id->age: ids with >1 value = 7,987 / 991,945
+customer_id->customer_segment: ids with >1 value = 4,345 / 991,945
+customer_id->country: ids with >1 value = 7,339 / 991,945
+customer_id->city: ids with >1 value = 7,969 / 991,945
+customer_id->account_creation_date: ids with >1 value = 8,124 / 991,945
+customer_id->customer_loyalty_score: ids with >1 value = 8,120 / 991,945
+customer_id->total_orders_by_customer: ids with >1 value = 7,958 / 991,945
+
+== STATUS vs RETURN / PAYMENT ==
+shape: (5, 3)
+┌──────────────┬────────┬────────────┐
+│ order_status ┆ len    ┆ has_reason │
+│ ---          ┆ ---    ┆ ---        │
+│ str          ┆ u32    ┆ u32        │
+╞══════════════╪════════╪════════════╡
+│ Completed    ┆ 700232 ┆ 0          │
+│ Returned     ┆ 99879  ┆ 99879      │
+│ Pending      ┆ 99748  ┆ 0          │
+│ Cancelled    ┆ 50163  ┆ 0          │
+│ Processing   ┆ 50101  ┆ 0          │
+└──────────────┴────────┴────────────┘
+shape: (9, 3)
+┌──────────────┬────────────────┬────────┐
+│ order_status ┆ payment_status ┆ len    │
+│ ---          ┆ ---            ┆ ---    │
+│ str          ┆ str            ┆ u32    │
+╞══════════════╪════════════════╪════════╡
+│ Completed    ┆ Paid           ┆ 700232 │
+│ Returned     ┆ Paid           ┆ 99879  │
+│ Processing   ┆ Paid           ┆ 50101  │
+│ Pending      ┆ Failed         ┆ 33328  │
+│ Pending      ┆ Pending        ┆ 33318  │
+│ Pending      ┆ Paid           ┆ 33102  │
+│ Cancelled    ┆ Paid           ┆ 16832  │
+│ Cancelled    ┆ Pending        ┆ 16687  │
+│ Cancelled    ┆ Failed         ┆ 16644  │
+└──────────────┴────────────────┴────────┘
+shape: (20, 3)
+┌──────────────┬─────────────────┬────────┐
+│ order_status ┆ delivery_status ┆ len    │
+│ ---          ┆ ---             ┆ ---    │
+│ str          ┆ str             ┆ u32    │
+╞══════════════╪═════════════════╪════════╡
+│ Completed    ┆ Delivered       ┆ 525705 │
+│ Completed    ┆ In Transit      ┆ 104700 │
+│ Pending      ┆ Delivered       ┆ 74940  │
+│ Returned     ┆ Delivered       ┆ 74835  │
+│ Cancelled    ┆ Delivered       ┆ 37663  │
+│ Processing   ┆ Delivered       ┆ 37661  │
+│ Completed    ┆ Failed          ┆ 35010  │
+│ Completed    ┆ Pending         ┆ 34817  │
+│ Returned     ┆ In Transit      ┆ 14933  │
+│ Pending      ┆ In Transit      ┆ 14871  │
+│ Processing   ┆ In Transit      ┆ 7529   │
+│ Cancelled    ┆ In Transit      ┆ 7518   │
+│ Returned     ┆ Pending         ┆ 5080   │
+│ Pending      ┆ Failed          ┆ 5042   │
+│ Returned     ┆ Failed          ┆ 5031   │
+│ Pending      ┆ Pending         ┆ 4895   │
+│ Cancelled    ┆ Pending         ┆ 2499   │
+│ Cancelled    ┆ Failed          ┆ 2483   │
+│ Processing   ┆ Pending         ┆ 2483   │
+│ Processing   ┆ Failed          ┆ 2428   │
+└──────────────┴─────────────────┴────────┘
+
+== RATING vs SENTIMENT ==
+shape: (5, 3)
+┌────────┬──────────────────┬────────┐
+│ rating ┆ review_sentiment ┆ len    │
+│ ---    ┆ ---              ┆ ---    │
+│ i64    ┆ str              ┆ u32    │
+╞════════╪══════════════════╪════════╡
+│ 1      ┆ Negative         ┆ 200399 │
+│ 2      ┆ Negative         ┆ 199808 │
+│ 3      ┆ Neutral          ┆ 199826 │
+│ 4      ┆ Positive         ┆ 199790 │
+│ 5      ┆ Positive         ┆ 200300 │
+└────────┴──────────────────┴────────┘
+nulls rating/sentiment/feedback: 0 0 199617
+
+== PRODUCT NAME vs CATEGORY (sample) ==
+shape: (40, 6)
+┌────────────────────────────────┬───────┬───────┬─────────┬───────┬───────┐
+│ product_name                   ┆ n_cat ┆ n_sub ┆ n_brand ┆ n_pid ┆ len   │
+│ ---                            ┆ ---   ┆ ---   ┆ ---     ┆ ---   ┆ ---   │
+│ str                            ┆ u32   ┆ u32   ┆ u32     ┆ u32   ┆ u32   │
+╞════════════════════════════════╪═══════╪═══════╪═════════╪═══════╪═══════╡
+│ Water Bottle Insulated         ┆ 1     ┆ 4     ┆ 20      ┆ 22556 ┆ 22679 │
+│ Vacuum Robot Cleaner           ┆ 1     ┆ 5     ┆ 20      ┆ 22421 ┆ 22586 │
+│ LED Strip Lights 5m            ┆ 1     ┆ 5     ┆ 20      ┆ 22348 ┆ 22483 │
+│ Tennis Balls Pack              ┆ 1     ┆ 4     ┆ 20      ┆ 22294 ┆ 22441 │
+│ Desk Lamp LED                  ┆ 1     ┆ 5     ┆ 20      ┆ 22238 ┆ 22370 │
+│ Resistance Bands Set           ┆ 1     ┆ 4     ┆ 20      ┆ 22221 ┆ 22366 │
+│ Foam Roller                    ┆ 1     ┆ 4     ┆ 20      ┆ 22193 ┆ 22363 │
+│ Cotton T-Shirt Pack            ┆ 1     ┆ 5     ┆ 20      ┆ 22188 ┆ 22336 │
+│ Storage Box Set                ┆ 1     ┆ 5     ┆ 20      ┆ 22176 ┆ 22329 │
+│ Gym Gloves                     ┆ 1     ┆ 4     ┆ 20      ┆ 22149 ┆ 22300 │
+│ Treadmill Folding              ┆ 1     ┆ 4     ┆ 20      ┆ 22144 ┆ 22293 │
+│ Massage Gun Deep Tissue        ┆ 1     ┆ 4     ┆ 20      ┆ 22121 ┆ 22289 │
+│ Yoga Pants Leggings            ┆ 1     ┆ 5     ┆ 20      ┆ 22144 ┆ 22289 │
+│ Hooded Sweatshirt              ┆ 1     ┆ 5     ┆ 20      ┆ 22125 ┆ 22267 │
+│ Running Shoes Air Zoom         ┆ 1     ┆ 5     ┆ 20      ┆ 22119 ┆ 22245 │
+│ Dumbbells Set Adjustable       ┆ 1     ┆ 4     ┆ 20      ┆ 22105 ┆ 22236 │
+│ Coffee Maker Automatic         ┆ 1     ┆ 5     ┆ 20      ┆ 22073 ┆ 22218 │
+│ Badminton Racket               ┆ 1     ┆ 4     ┆ 20      ┆ 22075 ┆ 22206 │
+│ Blender 1000W                  ┆ 1     ┆ 5     ┆ 20      ┆ 22038 ┆ 22204 │
+│ Sports Bra High Impact         ┆ 1     ┆ 5     ┆ 20      ┆ 22036 ┆ 22178 │
+│ Baseball Cap                   ┆ 1     ┆ 5     ┆ 20      ┆ 22022 ┆ 22175 │
+│ Air Fryer 5L                   ┆ 1     ┆ 5     ┆ 20      ┆ 22040 ┆ 22172 │
+│ Bedsheet Set Cotton            ┆ 1     ┆ 5     ┆ 20      ┆ 22036 ┆ 22170 │
+│ Digital Blood Pressure Monitor ┆ 1     ┆ 4     ┆ 20      ┆ 22001 ┆ 22161 │
+│ Jump Rope Speed                ┆ 1     ┆ 4     ┆ 20      ┆ 22019 ┆ 22152 │
+│ Swimming Goggles               ┆ 1     ┆ 4     ┆ 20      ┆ 21983 ┆ 22149 │
+│ Denim Jeans Slim Fit           ┆ 1     ┆ 5     ┆ 20      ┆ 22000 ┆ 22144 │
+│ Digital Thermometer            ┆ 1     ┆ 4     ┆ 20      ┆ 21979 ┆ 22137 │
+│ Yoga Mat Non-Slip              ┆ 1     ┆ 4     ┆ 20      ┆ 21982 ┆ 22116 │
+│ Protein Shaker Bottle          ┆ 1     ┆ 4     ┆ 20      ┆ 21973 ┆ 22102 │
+│ Electric Toothbrush            ┆ 1     ┆ 5     ┆ 20      ┆ 21917 ┆ 22057 │
+│ Vitamin C Tablets              ┆ 1     ┆ 4     ┆ 20      ┆ 21878 ┆ 22036 │
+│ Fitness Smart Band             ┆ 1     ┆ 4     ┆ 20      ┆ 21844 ┆ 22004 │
+│ Winter Jacket Waterproof       ┆ 1     ┆ 5     ┆ 20      ┆ 21838 ┆ 21987 │
+│ Exercise Ball                  ┆ 1     ┆ 4     ┆ 20      ┆ 21801 ┆ 21941 │
+│ Casual Sneakers                ┆ 1     ┆ 5     ┆ 20      ┆ 21762 ┆ 21923 │
+│ USB Hub 7-Port                 ┆ 1     ┆ 6     ┆ 20      ┆ 16913 ┆ 16999 │
+│ Wireless Mouse 2.4GHz          ┆ 1     ┆ 6     ┆ 20      ┆ 16725 ┆ 16813 │
+│ Phone Case Shockproof          ┆ 1     ┆ 6     ┆ 20      ┆ 16723 ┆ 16806 │
+│ Gaming Mechanical Keyboard RGB ┆ 1     ┆ 6     ┆ 20      ┆ 16710 ┆ 16796 │
+└────────────────────────────────┴───────┴───────┴─────────┴───────┴───────┘
+
+category x sub_category:
+shape: (24, 3)
+┌─────────────┬─────────────────┬───────┐
+│ category    ┆ sub_category    ┆ len   │
+│ ---         ┆ ---             ┆ ---   │
+│ str         ┆ str             ┆ u32   │
+╞═════════════╪═════════════════╪═══════╡
+│ Clothing    ┆ Accessories     ┆ 39925 │
+│ Clothing    ┆ Kids Wear       ┆ 39789 │
+│ Clothing    ┆ Mens Wear       ┆ 39909 │
+│ Clothing    ┆ Shoes           ┆ 40036 │
+│ Clothing    ┆ Womens Wear     ┆ 39885 │
+│ Electronics ┆ Accessories     ┆ 33294 │
+│ Electronics ┆ Audio           ┆ 33340 │
+│ Electronics ┆ Cameras         ┆ 33515 │
+│ Electronics ┆ Laptops         ┆ 33232 │
+│ Electronics ┆ Smartphones     ┆ 33265 │
+│ Electronics ┆ Tablets         ┆ 33373 │
+│ Health      ┆ Fitness         ┆ 49567 │
+│ Health      ┆ Medical Devices ┆ 49826 │
+│ Health      ┆ Personal Care   ┆ 50039 │
+│ Health      ┆ Supplements     ┆ 50142 │
+│ Home        ┆ Appliances      ┆ 39588 │
+│ Home        ┆ Bedding         ┆ 40105 │
+│ Home        ┆ Decor           ┆ 40507 │
+│ Home        ┆ Furniture       ┆ 40147 │
+│ Home        ┆ Kitchen         ┆ 40242 │
+│ Sports      ┆ Accessories     ┆ 50483 │
+│ Sports      ┆ Gym Equipment   ┆ 50141 │
+│ Sports      ┆ Outdoor         ┆ 49816 │
+│ Sports      ┆ Sports Wear     ┆ 49957 │
+└─────────────┴─────────────────┴───────┘

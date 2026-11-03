@@ -1,0 +1,38 @@
+train rows=871,769 | test completed purchases=89,889 | items=48 | random hit@5=0.1042
+
+=== Relevance metrics @K=5 (95% CI on hit rate) ===
+model                             hit     +-CI     NDCG   cover  captured$/cust  lift vs pop
+random                         0.1052   0.0020   0.0633    0.10           17.38        nan%
+popularity                     0.1112   0.0021   0.0662    0.10           14.56       0.00%
+trending_90d                   0.1105   0.0020   0.0649    0.10           13.03      -0.60%
+segment_popularity             0.1121   0.0021   0.0665    0.75           14.76       0.81%
+profile_naive_bayes            0.1116   0.0021   0.0661    0.77           14.73       0.34%
+profile_logreg                 0.1118   0.0021   0.0662    0.94           14.90       0.52%
+hybrid(logreg+popularity)      0.1122   0.0021   0.0665    0.77           14.96       0.93%
+
+=== Relevance metrics @K=10 (95% CI on hit rate) ===
+model                             hit     +-CI     NDCG   cover  captured$/cust  lift vs pop
+random                         0.2133   0.0027   0.0976    0.21           30.87        nan%
+popularity                     0.2231   0.0027   0.1019    0.21           31.51       0.00%
+trending_90d                   0.2219   0.0027   0.1004    0.21           27.49      -0.53%
+segment_popularity             0.2247   0.0027   0.1024    0.75           30.26       0.71%
+profile_naive_bayes            0.2222   0.0027   0.1014    0.90           29.07      -0.41%
+profile_logreg                 0.2224   0.0027   0.1015    0.98           29.49      -0.31%
+hybrid(logreg+popularity)      0.2224   0.0027   0.1017    0.79           29.46      -0.31%
+
+Paired test profile_logreg vs popularity hit@5: diff=+0.00058  95% CI [-0.00224, +0.00339]
+
+=== Business re-ranking (hybrid relevance + net profit per order), K=5 ===
+lambda    hit@5   NDCG@5   cover  captured$/cust  avg item value $  top-5 categories
+  0.00   0.1122   0.0665    0.77           14.96             92.63  {'Sports': 2, 'Health': 2, 'Home': 1}
+  0.25   0.1116   0.0658    1.00           18.29            114.40  {'Home': 3, 'Sports': 1, 'Health': 1}
+  0.50   0.0846   0.0499    0.44           23.62            196.25  {'Electronics': 5}
+  0.75   0.0844   0.0496    0.25           23.56            196.61  {'Electronics': 5}
+  1.00   0.0837   0.0496    0.10           23.08            197.47  {'Electronics': 5}
+
+Item net profit per order: min=62.68 max=198.01 | category means:
+  Electronics    196.23
+  Home           121.98
+  Sports         101.60
+  Health          80.55
+  Clothing        63.24

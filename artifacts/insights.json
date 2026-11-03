@@ -1,0 +1,2835 @@
+{
+ "meta": {
+  "rows": 1000123,
+  "start": "2024-02-03",
+  "end": "2026-02-02"
+ },
+ "kpis": {
+  "orders": 1000123,
+  "customers": 1000122,
+  "gross_revenue_all_orders": 403285857.0,
+  "net_revenue_completed": 282594042.90999997,
+  "net_profit_completed": 112794701.62,
+  "realized_revenue": 322654541.03,
+  "realized_profit": 128780871.05,
+  "completed_rate": 0.7001458820565071,
+  "return_rate": 0.09986671639388356,
+  "cancel_rate": 0.05015683070982269,
+  "payment_failed_rate": 0.04996585419993341,
+  "avg_margin_pct": 39.46517022406245,
+  "status_conflict_rate": 0.23247940503318093
+ },
+ "products": {
+  "by_category": [
+   {
+    "category": "Electronics",
+    "orders": 200019,
+    "conversion": 0.7019,
+    "net_revenue": 98267820.78,
+    "net_profit": 39225887.42,
+    "net_profit_per_order": 196.1108,
+    "avg_order_value": 699.2635,
+    "avg_margin_pct": 39.4882,
+    "return_rate": 0.0984,
+    "avg_rating": 2.9999,
+    "items": 12,
+    "profit_share": 0.3478,
+    "order_share": 0.2
+   },
+   {
+    "category": "Home",
+    "orders": 200589,
+    "conversion": 0.699,
+    "net_revenue": 61425750.68,
+    "net_profit": 24492274.63,
+    "net_profit_per_order": 122.1018,
+    "avg_order_value": 437.8539,
+    "avg_margin_pct": 39.424,
+    "return_rate": 0.1001,
+    "avg_rating": 3.0025,
+    "items": 9,
+    "profit_share": 0.2171,
+    "order_share": 0.2006
+   },
+   {
+    "category": "Sports",
+    "orders": 200397,
+    "conversion": 0.7003,
+    "net_revenue": 51045549.33,
+    "net_profit": 20396196.03,
+    "net_profit_per_order": 101.7789,
+    "avg_order_value": 363.8651,
+    "avg_margin_pct": 39.4811,
+    "return_rate": 0.1004,
+    "avg_rating": 3.0008,
+    "items": 9,
+    "profit_share": 0.1808,
+    "order_share": 0.2004
+   },
+   {
+    "category": "Health",
+    "orders": 199574,
+    "conversion": 0.6994,
+    "net_revenue": 40208421.22,
+    "net_profit": 16059271.95,
+    "net_profit_per_order": 80.4678,
+    "avg_order_value": 287.953,
+    "avg_margin_pct": 39.4845,
+    "return_rate": 0.1003,
+    "avg_rating": 2.9955,
+    "items": 9,
+    "profit_share": 0.1424,
+    "order_share": 0.1995
+   },
+   {
+    "category": "Clothing",
+    "orders": 199544,
+    "conversion": 0.7002,
+    "net_revenue": 31646500.9,
+    "net_profit": 12621071.59,
+    "net_profit_per_order": 63.2496,
+    "avg_order_value": 226.5455,
+    "avg_margin_pct": 39.4481,
+    "return_rate": 0.1,
+    "avg_rating": 3.0002,
+    "items": 9,
+    "profit_share": 0.1119,
+    "order_share": 0.1995
+   }
+  ],
+  "by_sub_category": [
+   {
+    "category": "Electronics",
+    "sub_category": "Audio",
+    "orders": 33340,
+    "conversion": 0.701,
+    "net_revenue": 16484580.7,
+    "net_profit": 6570713.34,
+    "net_profit_per_order": 197.082,
+    "avg_order_value": 702.0926,
+    "avg_margin_pct": 39.4007,
+    "return_rate": 0.0968,
+    "avg_rating": 3.0
+   },
+   {
+    "category": "Electronics",
+    "sub_category": "Cameras",
+    "orders": 33515,
+    "conversion": 0.7011,
+    "net_revenue": 16418420.0,
+    "net_profit": 6559594.56,
+    "net_profit_per_order": 195.7212,
+    "avg_order_value": 699.4326,
+    "avg_margin_pct": 39.5572,
+    "return_rate": 0.0981,
+    "avg_rating": 3.0047
+   },
+   {
+    "category": "Electronics",
+    "sub_category": "Smartphones",
+    "orders": 33265,
+    "conversion": 0.7027,
+    "net_revenue": 16373350.55,
+    "net_profit": 6548298.41,
+    "net_profit_per_order": 196.8525,
+    "avg_order_value": 700.315,
+    "avg_margin_pct": 39.5321,
+    "return_rate": 0.1005,
+    "avg_rating": 3.0026
+   },
+   {
+    "category": "Electronics",
+    "sub_category": "Tablets",
+    "orders": 33373,
+    "conversion": 0.7012,
+    "net_revenue": 16330542.16,
+    "net_profit": 6543314.58,
+    "net_profit_per_order": 196.0661,
+    "avg_order_value": 697.1212,
+    "avg_margin_pct": 39.539,
+    "return_rate": 0.0988,
+    "avg_rating": 3.002
+   },
+   {
+    "category": "Electronics",
+    "sub_category": "Accessories",
+    "orders": 33294,
+    "conversion": 0.7041,
+    "net_revenue": 16415351.01,
+    "net_profit": 6516835.06,
+    "net_profit_per_order": 195.736,
+    "avg_order_value": 698.3868,
+    "avg_margin_pct": 39.323,
+    "return_rate": 0.0981,
+    "avg_rating": 2.9931
+   },
+   {
+    "category": "Electronics",
+    "sub_category": "Laptops",
+    "orders": 33232,
+    "conversion": 0.7015,
+    "net_revenue": 16245576.36,
+    "net_profit": 6487131.47,
+    "net_profit_per_order": 195.2074,
+    "avg_order_value": 698.2319,
+    "avg_margin_pct": 39.5772,
+    "return_rate": 0.0984,
+    "avg_rating": 2.9971
+   },
+   {
+    "category": "Sports",
+    "sub_category": "Accessories",
+    "orders": 50483,
+    "conversion": 0.701,
+    "net_revenue": 12884818.72,
+    "net_profit": 5153207.83,
+    "net_profit_per_order": 102.0781,
+    "avg_order_value": 363.7079,
+    "avg_margin_pct": 39.4882,
+    "return_rate": 0.0994,
+    "avg_rating": 3.0072
+   },
+   {
+    "category": "Sports",
+    "sub_category": "Gym Equipment",
+    "orders": 50141,
+    "conversion": 0.7001,
+    "net_revenue": 12768592.96,
+    "net_profit": 5111340.61,
+    "net_profit_per_order": 101.9393,
+    "avg_order_value": 363.6422,
+    "avg_margin_pct": 39.5386,
+    "return_rate": 0.0996,
+    "avg_rating": 3.0009
+   },
+   {
+    "category": "Sports",
+    "sub_category": "Sports Wear",
+    "orders": 49957,
+    "conversion": 0.7016,
+    "net_revenue": 12721490.37,
+    "net_profit": 5076721.74,
+    "net_profit_per_order": 101.6218,
+    "avg_order_value": 363.6997,
+    "avg_margin_pct": 39.4659,
+    "return_rate": 0.1024,
+    "avg_rating": 2.9892
+   },
+   {
+    "category": "Sports",
+    "sub_category": "Outdoor",
+    "orders": 49816,
+    "conversion": 0.6984,
+    "net_revenue": 12670647.28,
+    "net_profit": 5054925.85,
+    "net_profit_per_order": 101.4719,
+    "avg_order_value": 364.4146,
+    "avg_margin_pct": 39.431,
+    "return_rate": 0.1001,
+    "avg_rating": 3.0057
+   },
+   {
+    "category": "Home",
+    "sub_category": "Bedding",
+    "orders": 40105,
+    "conversion": 0.7028,
+    "net_revenue": 12470514.0,
+    "net_profit": 4962953.53,
+    "net_profit_per_order": 123.749,
+    "avg_order_value": 441.0081,
+    "avg_margin_pct": 39.3908,
+    "return_rate": 0.0996,
+    "avg_rating": 2.9995
+   },
+   {
+    "category": "Home",
+    "sub_category": "Decor",
+    "orders": 40507,
+    "conversion": 0.6994,
+    "net_revenue": 12360475.24,
+    "net_profit": 4938370.64,
+    "net_profit_per_order": 121.914,
+    "avg_order_value": 435.8275,
+    "avg_margin_pct": 39.4741,
+    "return_rate": 0.0978,
+    "avg_rating": 3.0103
+   },
+   {
+    "category": "Home",
+    "sub_category": "Kitchen",
+    "orders": 40242,
+    "conversion": 0.6987,
+    "net_revenue": 12257315.0,
+    "net_profit": 4882354.57,
+    "net_profit_per_order": 121.3248,
+    "avg_order_value": 435.9903,
+    "avg_margin_pct": 39.425,
+    "return_rate": 0.0989,
+    "avg_rating": 2.9912
+   },
+   {
+    "category": "Home",
+    "sub_category": "Appliances",
+    "orders": 39588,
+    "conversion": 0.6976,
+    "net_revenue": 12170600.12,
+    "net_profit": 4859270.96,
+    "net_profit_per_order": 122.7461,
+    "avg_order_value": 440.6874,
+    "avg_margin_pct": 39.459,
+    "return_rate": 0.1025,
+    "avg_rating": 3.0073
+   },
+   {
+    "category": "Home",
+    "sub_category": "Furniture",
+    "orders": 40147,
+    "conversion": 0.6964,
+    "net_revenue": 12166846.32,
+    "net_profit": 4849324.93,
+    "net_profit_per_order": 120.7892,
+    "avg_order_value": 435.8217,
+    "avg_margin_pct": 39.3713,
+    "return_rate": 0.1019,
+    "avg_rating": 3.0043
+   },
+   {
+    "category": "Health",
+    "sub_category": "Medical Devices",
+    "orders": 49826,
+    "conversion": 0.7005,
+    "net_revenue": 10093899.17,
+    "net_profit": 4037476.77,
+    "net_profit_per_order": 81.0315,
+    "avg_order_value": 288.8337,
+    "avg_margin_pct": 39.512,
+    "return_rate": 0.1002,
+    "avg_rating": 3.0
+   },
+   {
+    "category": "Health",
+    "sub_category": "Fitness",
+    "orders": 49567,
+    "conversion": 0.7019,
+    "net_revenue": 10043200.86,
+    "net_profit": 4013854.81,
+    "net_profit_per_order": 80.9784,
+    "avg_order_value": 288.3058,
+    "avg_margin_pct": 39.4688,
+    "return_rate": 0.1005,
+    "avg_rating": 2.9973
+   },
+   {
+    "category": "Health",
+    "sub_category": "Personal Care",
+    "orders": 50039,
+    "conversion": 0.6995,
+    "net_revenue": 10039250.31,
+    "net_profit": 4006900.92,
+    "net_profit_per_order": 80.0756,
+    "avg_order_value": 287.3017,
+    "avg_margin_pct": 39.4795,
+    "return_rate": 0.0996,
+    "avg_rating": 2.9956
+   },
+   {
+    "category": "Health",
+    "sub_category": "Supplements",
+    "orders": 50142,
+    "conversion": 0.6956,
+    "net_revenue": 10032070.88,
+    "net_profit": 4001039.45,
+    "net_profit_per_order": 79.7942,
+    "avg_order_value": 287.3789,
+    "avg_margin_pct": 39.4776,
+    "return_rate": 0.1011,
+    "avg_rating": 2.9893
+   },
+   {
+    "category": "Clothing",
+    "sub_category": "Kids Wear",
+    "orders": 39789,
+    "conversion": 0.7031,
+    "net_revenue": 6346397.43,
+    "net_profit": 2533313.48,
+    "net_profit_per_order": 63.6687,
+    "avg_order_value": 227.4632,
+    "avg_margin_pct": 39.4598,
+    "return_rate": 0.0989,
+    "avg_rating": 2.9954
+   },
+   {
+    "category": "Clothing",
+    "sub_category": "Accessories",
+    "orders": 39925,
+    "conversion": 0.7002,
+    "net_revenue": 6358410.7,
+    "net_profit": 2531592.65,
+    "net_profit_per_order": 63.4087,
+    "avg_order_value": 226.5919,
+    "avg_margin_pct": 39.4457,
+    "return_rate": 0.0992,
+    "avg_rating": 3.0018
+   },
+   {
+    "category": "Clothing",
+    "sub_category": "Shoes",
+    "orders": 40036,
+    "conversion": 0.7015,
+    "net_revenue": 6327760.49,
+    "net_profit": 2529066.58,
+    "net_profit_per_order": 63.1698,
+    "avg_order_value": 225.4324,
+    "avg_margin_pct": 39.5128,
+    "return_rate": 0.1004,
+    "avg_rating": 3.0024
+   },
+   {
+    "category": "Clothing",
+    "sub_category": "Womens Wear",
+    "orders": 39885,
+    "conversion": 0.697,
+    "net_revenue": 6333785.26,
+    "net_profit": 2523929.43,
+    "net_profit_per_order": 63.2802,
+    "avg_order_value": 228.3869,
+    "avg_margin_pct": 39.4185,
+    "return_rate": 0.1009,
+    "avg_rating": 2.9977
+   },
+   {
+    "category": "Clothing",
+    "sub_category": "Mens Wear",
+    "orders": 39909,
+    "conversion": 0.699,
+    "net_revenue": 6280147.02,
+    "net_profit": 2503169.45,
+    "net_profit_per_order": 62.7219,
+    "avg_order_value": 224.8604,
+    "avg_margin_pct": 39.4038,
+    "return_rate": 0.1007,
+    "avg_rating": 3.0037
+   }
+  ],
+  "by_brand": [
+   {
+    "brand": "Samsung",
+    "orders": 49914,
+    "conversion": 0.7,
+    "net_revenue": 14286298.01,
+    "net_profit": 5715506.15,
+    "net_profit_per_order": 114.5071,
+    "avg_order_value": 407.7451,
+    "avg_margin_pct": 39.4975,
+    "return_rate": 0.1014,
+    "avg_rating": 3.0062
+   },
+   {
+    "brand": "Sony",
+    "orders": 50299,
+    "conversion": 0.7004,
+    "net_revenue": 14215707.12,
+    "net_profit": 5687070.5,
+    "net_profit_per_order": 113.0653,
+    "avg_order_value": 402.8693,
+    "avg_margin_pct": 39.4843,
+    "return_rate": 0.0982,
+    "avg_rating": 2.9985
+   },
+   {
+    "brand": "Anker",
+    "orders": 50004,
+    "conversion": 0.7021,
+    "net_revenue": 14156040.89,
+    "net_profit": 5671016.99,
+    "net_profit_per_order": 113.4113,
+    "avg_order_value": 401.975,
+    "avg_margin_pct": 39.5126,
+    "return_rate": 0.0994,
+    "avg_rating": 3.0031
+   },
+   {
+    "brand": "GoPro",
+    "orders": 50293,
+    "conversion": 0.7029,
+    "net_revenue": 14214887.87,
+    "net_profit": 5668114.52,
+    "net_profit_per_order": 112.7019,
+    "avg_order_value": 402.878,
+    "avg_margin_pct": 39.4798,
+    "return_rate": 0.101,
+    "avg_rating": 2.9937
+   },
+   {
+    "brand": "Dell",
+    "orders": 50436,
+    "conversion": 0.6995,
+    "net_revenue": 14209183.09,
+    "net_profit": 5668012.42,
+    "net_profit_per_order": 112.3803,
+    "avg_order_value": 403.3172,
+    "avg_margin_pct": 39.4275,
+    "return_rate": 0.1002,
+    "avg_rating": 3.0103
+   },
+   {
+    "brand": "Xiaomi",
+    "orders": 50088,
+    "conversion": 0.7037,
+    "net_revenue": 14237116.68,
+    "net_profit": 5666360.42,
+    "net_profit_per_order": 113.1281,
+    "avg_order_value": 403.8299,
+    "avg_margin_pct": 39.4659,
+    "return_rate": 0.0999,
+    "avg_rating": 2.9968
+   },
+   {
+    "brand": "Fitbit",
+    "orders": 50202,
+    "conversion": 0.6955,
+    "net_revenue": 14171979.71,
+    "net_profit": 5664634.78,
+    "net_profit_per_order": 112.8368,
+    "avg_order_value": 404.032,
+    "avg_margin_pct": 39.4617,
+    "return_rate": 0.103,
+    "avg_rating": 2.9975
+   },
+   {
+    "brand": "Nike",
+    "orders": 49919,
+    "conversion": 0.7009,
+    "net_revenue": 14175209.96,
+    "net_profit": 5653899.59,
+    "net_profit_per_order": 113.2615,
+    "avg_order_value": 403.5625,
+    "avg_margin_pct": 39.4811,
+    "return_rate": 0.0983,
+    "avg_rating": 2.9968
+   },
+   {
+    "brand": "JBL",
+    "orders": 49976,
+    "conversion": 0.7009,
+    "net_revenue": 14135022.0,
+    "net_profit": 5653203.27,
+    "net_profit_per_order": 113.1184,
+    "avg_order_value": 403.8156,
+    "avg_margin_pct": 39.5496,
+    "return_rate": 0.0985,
+    "avg_rating": 3.0095
+   },
+   {
+    "brand": "Huawei",
+    "orders": 50045,
+    "conversion": 0.702,
+    "net_revenue": 14179278.24,
+    "net_profit": 5647397.48,
+    "net_profit_per_order": 112.8464,
+    "avg_order_value": 403.8246,
+    "avg_margin_pct": 39.4486,
+    "return_rate": 0.0977,
+    "avg_rating": 2.9971
+   },
+   {
+    "brand": "Philips",
+    "orders": 50293,
+    "conversion": 0.7014,
+    "net_revenue": 14132625.06,
+    "net_profit": 5637407.42,
+    "net_profit_per_order": 112.0913,
+    "avg_order_value": 402.0424,
+    "avg_margin_pct": 39.477,
+    "return_rate": 0.1011,
+    "avg_rating": 2.9998
+   },
+   {
+    "brand": "Adidas",
+    "orders": 49862,
+    "conversion": 0.7001,
+    "net_revenue": 14115344.1,
+    "net_profit": 5635117.83,
+    "net_profit_per_order": 113.0143,
+    "avg_order_value": 401.9875,
+    "avg_margin_pct": 39.4368,
+    "return_rate": 0.1,
+    "avg_rating": 2.9872
+   },
+   {
+    "brand": "Baseus",
+    "orders": 49879,
+    "conversion": 0.6975,
+    "net_revenue": 14071950.96,
+    "net_profit": 5628175.63,
+    "net_profit_per_order": 112.8366,
+    "avg_order_value": 404.4033,
+    "avg_margin_pct": 39.4284,
+    "return_rate": 0.1014,
+    "avg_rating": 2.9966
+   },
+   {
+    "brand": "Canon",
+    "orders": 49761,
+    "conversion": 0.7028,
+    "net_revenue": 14134869.72,
+    "net_profit": 5627673.63,
+    "net_profit_per_order": 113.0941,
+    "avg_order_value": 404.0285,
+    "avg_margin_pct": 39.4,
+    "return_rate": 0.0982,
+    "avg_rating": 3.0074
+   },
+   {
+    "brand": "Apple",
+    "orders": 49997,
+    "conversion": 0.7015,
+    "net_revenue": 14089905.61,
+    "net_profit": 5625178.55,
+    "net_profit_per_order": 112.5103,
+    "avg_order_value": 401.0728,
+    "avg_margin_pct": 39.504,
+    "return_rate": 0.0995,
+    "avg_rating": 3.0067
+   },
+   {
+    "brand": "Nikon",
+    "orders": 49794,
+    "conversion": 0.6987,
+    "net_revenue": 14115955.8,
+    "net_profit": 5615568.93,
+    "net_profit_per_order": 112.776,
+    "avg_order_value": 404.3455,
+    "avg_margin_pct": 39.3406,
+    "return_rate": 0.1005,
+    "avg_rating": 3.0009
+   },
+   {
+    "brand": "Lenovo",
+    "orders": 49843,
+    "conversion": 0.7021,
+    "net_revenue": 14064952.29,
+    "net_profit": 5598838.93,
+    "net_profit_per_order": 112.3295,
+    "avg_order_value": 402.5038,
+    "avg_margin_pct": 39.4012,
+    "return_rate": 0.0993,
+    "avg_rating": 3.0006
+   },
+   {
+    "brand": "Asus",
+    "orders": 49934,
+    "conversion": 0.6989,
+    "net_revenue": 13984400.19,
+    "net_profit": 5582884.65,
+    "net_profit_per_order": 111.8053,
+    "avg_order_value": 400.8932,
+    "avg_margin_pct": 39.5346,
+    "return_rate": 0.0974,
+    "avg_rating": 3.0046
+   },
+   {
+    "brand": "Logitech",
+    "orders": 49758,
+    "conversion": 0.6948,
+    "net_revenue": 13946120.4,
+    "net_profit": 5579559.36,
+    "net_profit_per_order": 112.1339,
+    "avg_order_value": 403.4229,
+    "avg_margin_pct": 39.4597,
+    "return_rate": 0.1026,
+    "avg_rating": 2.997
+   },
+   {
+    "brand": "HP",
+    "orders": 49826,
+    "conversion": 0.6973,
+    "net_revenue": 13957195.21,
+    "net_profit": 5569080.57,
+    "net_profit_per_order": 111.7706,
+    "avg_order_value": 402.19,
+    "avg_margin_pct": 39.5119,
+    "return_rate": 0.0997,
+    "avg_rating": 2.9854
+   }
+  ],
+  "by_item": [
+   {
+    "category": "Electronics",
+    "item_key": "USB Hub 7-Port",
+    "orders": 16999,
+    "conversion": 0.7029,
+    "net_revenue": 8388325.15,
+    "net_profit": 3343010.87,
+    "net_profit_per_order": 196.6593,
+    "avg_order_value": 699.593,
+    "avg_margin_pct": 39.5125,
+    "return_rate": 0.0974,
+    "avg_rating": 2.9962
+   },
+   {
+    "category": "Electronics",
+    "item_key": "Gaming Mechanical Keyboard RGB",
+    "orders": 16796,
+    "conversion": 0.7034,
+    "net_revenue": 8282290.7,
+    "net_profit": 3305518.66,
+    "net_profit_per_order": 196.8039,
+    "avg_order_value": 700.7239,
+    "avg_margin_pct": 39.4769,
+    "return_rate": 0.1001,
+    "avg_rating": 2.9893
+   },
+   {
+    "category": "Electronics",
+    "item_key": "USB-C Fast Charger 65W",
+    "orders": 16703,
+    "conversion": 0.6989,
+    "net_revenue": 8260239.47,
+    "net_profit": 3302640.25,
+    "net_profit_per_order": 197.7274,
+    "avg_order_value": 708.5278,
+    "avg_margin_pct": 39.4184,
+    "return_rate": 0.0975,
+    "avg_rating": 2.9971
+   },
+   {
+    "category": "Electronics",
+    "item_key": "Laptop Backpack Waterproof",
+    "orders": 16724,
+    "conversion": 0.7046,
+    "net_revenue": 8252516.18,
+    "net_profit": 3294962.34,
+    "net_profit_per_order": 197.02,
+    "avg_order_value": 700.7987,
+    "avg_margin_pct": 39.5539,
+    "return_rate": 0.0992,
+    "avg_rating": 3.0019
+   },
+   {
+    "category": "Electronics",
+    "item_key": "Wireless Mouse 2.4GHz",
+    "orders": 16813,
+    "conversion": 0.7026,
+    "net_revenue": 8240749.87,
+    "net_profit": 3291441.75,
+    "net_profit_per_order": 195.7677,
+    "avg_order_value": 699.9233,
+    "avg_margin_pct": 39.482,
+    "return_rate": 0.0983,
+    "avg_rating": 3.0008
+   },
+   {
+    "category": "Electronics",
+    "item_key": "Phone Case Shockproof",
+    "orders": 16806,
+    "conversion": 0.7012,
+    "net_revenue": 8260128.07,
+    "net_profit": 3288847.33,
+    "net_profit_per_order": 195.6948,
+    "avg_order_value": 700.3601,
+    "avg_margin_pct": 39.4753,
+    "return_rate": 0.1001,
+    "avg_rating": 3.0071
+   },
+   {
+    "category": "Electronics",
+    "item_key": "Wireless Bluetooth Earbuds",
+    "orders": 16701,
+    "conversion": 0.7036,
+    "net_revenue": 8202021.78,
+    "net_profit": 3284276.71,
+    "net_profit_per_order": 196.6515,
+    "avg_order_value": 699.1075,
+    "avg_margin_pct": 39.5875,
+    "return_rate": 0.0969,
+    "avg_rating": 3.0028
+   },
+   {
+    "category": "Electronics",
+    "item_key": "Smart Watch Series 8",
+    "orders": 16554,
+    "conversion": 0.7108,
+    "net_revenue": 8195800.59,
+    "net_profit": 3266152.87,
+    "net_profit_per_order": 197.3029,
+    "avg_order_value": 695.3369,
+    "avg_margin_pct": 39.4647,
+    "return_rate": 0.0964,
+    "avg_rating": 3.0104
+   },
+   {
+    "category": "Electronics",
+    "item_key": "Power Bank 20000mAh",
+    "orders": 16512,
+    "conversion": 0.7011,
+    "net_revenue": 8156683.12,
+    "net_profit": 3244999.88,
+    "net_profit_per_order": 196.5237,
+    "avg_order_value": 701.732,
+    "avg_margin_pct": 39.4372,
+    "return_rate": 0.0979,
+    "avg_rating": 3.0047
+   },
+   {
+    "category": "Electronics",
+    "item_key": "Portable SSD 1TB",
+    "orders": 16512,
+    "conversion": 0.6962,
+    "net_revenue": 8107284.11,
+    "net_profit": 3233298.7,
+    "net_profit_per_order": 195.8151,
+    "avg_order_value": 701.9428,
+    "avg_margin_pct": 39.4326,
+    "return_rate": 0.098,
+    "avg_rating": 2.9906
+   },
+   {
+    "category": "Electronics",
+    "item_key": "4K Webcam Pro",
+    "orders": 16497,
+    "conversion": 0.7015,
+    "net_revenue": 8002897.28,
+    "net_profit": 3197179.87,
+    "net_profit_per_order": 193.8037,
+    "avg_order_value": 692.7482,
+    "avg_margin_pct": 39.556,
+    "return_rate": 0.101,
+    "avg_rating": 3.0028
+   },
+   {
+    "category": "Electronics",
+    "item_key": "Screen Protector Tempered Glass",
+    "orders": 16402,
+    "conversion": 0.6961,
+    "net_revenue": 7918884.46,
+    "net_profit": 3173558.19,
+    "net_profit_per_order": 193.486,
+    "avg_order_value": 690.1196,
+    "avg_margin_pct": 39.4605,
+    "return_rate": 0.0986,
+    "avg_rating": 2.9954
+   },
+   {
+    "category": "Home",
+    "item_key": "Storage Box Set",
+    "orders": 22329,
+    "conversion": 0.7007,
+    "net_revenue": 6889477.79,
+    "net_profit": 2753663.25,
+    "net_profit_per_order": 123.3223,
+    "avg_order_value": 440.2494,
+    "avg_margin_pct": 39.3345,
+    "return_rate": 0.0989,
+    "avg_rating": 3.0095
+   },
+   {
+    "category": "Home",
+    "item_key": "Vacuum Robot Cleaner",
+    "orders": 22586,
+    "conversion": 0.7015,
+    "net_revenue": 6900142.78,
+    "net_profit": 2749865.57,
+    "net_profit_per_order": 121.7509,
+    "avg_order_value": 435.6033,
+    "avg_margin_pct": 39.3716,
+    "return_rate": 0.1001,
+    "avg_rating": 3.01
+   },
+   {
+    "category": "Home",
+    "item_key": "Air Fryer 5L",
+    "orders": 22172,
+    "conversion": 0.6972,
+    "net_revenue": 6842525.78,
+    "net_profit": 2730687.13,
+    "net_profit_per_order": 123.1593,
+    "avg_order_value": 440.2024,
+    "avg_margin_pct": 39.477,
+    "return_rate": 0.1018,
+    "avg_rating": 3.0156
+   },
+   {
+    "category": "Home",
+    "item_key": "LED Strip Lights 5m",
+    "orders": 22483,
+    "conversion": 0.6972,
+    "net_revenue": 6823191.15,
+    "net_profit": 2726789.55,
+    "net_profit_per_order": 121.2823,
+    "avg_order_value": 437.4569,
+    "avg_margin_pct": 39.4733,
+    "return_rate": 0.1003,
+    "avg_rating": 3.0042
+   },
+   {
+    "category": "Home",
+    "item_key": "Desk Lamp LED",
+    "orders": 22370,
+    "conversion": 0.7006,
+    "net_revenue": 6840820.46,
+    "net_profit": 2714450.35,
+    "net_profit_per_order": 121.3433,
+    "avg_order_value": 437.3573,
+    "avg_margin_pct": 39.3151,
+    "return_rate": 0.0984,
+    "avg_rating": 2.991
+   },
+   {
+    "category": "Home",
+    "item_key": "Coffee Maker Automatic",
+    "orders": 22218,
+    "conversion": 0.6972,
+    "net_revenue": 6783920.87,
+    "net_profit": 2709902.17,
+    "net_profit_per_order": 121.9688,
+    "avg_order_value": 435.5261,
+    "avg_margin_pct": 39.5011,
+    "return_rate": 0.101,
+    "avg_rating": 3.0049
+   },
+   {
+    "category": "Home",
+    "item_key": "Electric Toothbrush",
+    "orders": 22057,
+    "conversion": 0.6985,
+    "net_revenue": 6789937.76,
+    "net_profit": 2708774.22,
+    "net_profit_per_order": 122.8079,
+    "avg_order_value": 438.0412,
+    "avg_margin_pct": 39.5145,
+    "return_rate": 0.1013,
+    "avg_rating": 2.9904
+   },
+   {
+    "category": "Home",
+    "item_key": "Bedsheet Set Cotton",
+    "orders": 22170,
+    "conversion": 0.6993,
+    "net_revenue": 6780458.98,
+    "net_profit": 2707191.65,
+    "net_profit_per_order": 122.1106,
+    "avg_order_value": 436.9007,
+    "avg_margin_pct": 39.5161,
+    "return_rate": 0.097,
+    "avg_rating": 3.0051
+   },
+   {
+    "category": "Home",
+    "item_key": "Blender 1000W",
+    "orders": 22204,
+    "conversion": 0.6985,
+    "net_revenue": 6775275.11,
+    "net_profit": 2690950.74,
+    "net_profit_per_order": 121.1922,
+    "avg_order_value": 439.3864,
+    "avg_margin_pct": 39.3153,
+    "return_rate": 0.1022,
+    "avg_rating": 2.9918
+   },
+   {
+    "category": "Sports",
+    "item_key": "Water Bottle Insulated",
+    "orders": 22679,
+    "conversion": 0.7023,
+    "net_revenue": 5765430.1,
+    "net_profit": 2299496.71,
+    "net_profit_per_order": 101.3932,
+    "avg_order_value": 361.4535,
+    "avg_margin_pct": 39.5117,
+    "return_rate": 0.0976,
+    "avg_rating": 3.0041
+   },
+   {
+    "category": "Sports",
+    "item_key": "Gym Gloves",
+    "orders": 22300,
+    "conversion": 0.7018,
+    "net_revenue": 5735627.21,
+    "net_profit": 2292818.8,
+    "net_profit_per_order": 102.817,
+    "avg_order_value": 367.6019,
+    "avg_margin_pct": 39.4544,
+    "return_rate": 0.0989,
+    "avg_rating": 3.0095
+   },
+   {
+    "category": "Sports",
+    "item_key": "Tennis Balls Pack",
+    "orders": 22441,
+    "conversion": 0.6958,
+    "net_revenue": 5732154.26,
+    "net_profit": 2290726.98,
+    "net_profit_per_order": 102.0778,
+    "avg_order_value": 367.3687,
+    "avg_margin_pct": 39.5073,
+    "return_rate": 0.1022,
+    "avg_rating": 2.9937
+   },
+   {
+    "category": "Sports",
+    "item_key": "Treadmill Folding",
+    "orders": 22293,
+    "conversion": 0.7021,
+    "net_revenue": 5694283.3,
+    "net_profit": 2266393.15,
+    "net_profit_per_order": 101.6639,
+    "avg_order_value": 364.2658,
+    "avg_margin_pct": 39.3876,
+    "return_rate": 0.0987,
+    "avg_rating": 2.9913
+   },
+   {
+    "category": "Sports",
+    "item_key": "Exercise Ball",
+    "orders": 21941,
+    "conversion": 0.7027,
+    "net_revenue": 5627494.76,
+    "net_profit": 2259459.91,
+    "net_profit_per_order": 102.9789,
+    "avg_order_value": 364.51,
+    "avg_margin_pct": 39.4685,
+    "return_rate": 0.0999,
+    "avg_rating": 2.9983
+   },
+   {
+    "category": "Sports",
+    "item_key": "Badminton Racket",
+    "orders": 22206,
+    "conversion": 0.7029,
+    "net_revenue": 5651327.16,
+    "net_profit": 2250929.25,
+    "net_profit_per_order": 101.3658,
+    "avg_order_value": 362.5396,
+    "avg_margin_pct": 39.5233,
+    "return_rate": 0.1013,
+    "avg_rating": 3.0056
+   },
+   {
+    "category": "Sports",
+    "item_key": "Jump Rope Speed",
+    "orders": 22152,
+    "conversion": 0.7026,
+    "net_revenue": 5646919.55,
+    "net_profit": 2250171.36,
+    "net_profit_per_order": 101.5787,
+    "avg_order_value": 360.4177,
+    "avg_margin_pct": 39.3082,
+    "return_rate": 0.0992,
+    "avg_rating": 3.0045
+   },
+   {
+    "category": "Sports",
+    "item_key": "Swimming Goggles",
+    "orders": 22149,
+    "conversion": 0.6997,
+    "net_revenue": 5614274.21,
+    "net_profit": 2246795.5,
+    "net_profit_per_order": 101.44,
+    "avg_order_value": 364.0558,
+    "avg_margin_pct": 39.5408,
+    "return_rate": 0.1018,
+    "avg_rating": 3.0082
+   },
+   {
+    "category": "Sports",
+    "item_key": "Dumbbells Set Adjustable",
+    "orders": 22236,
+    "conversion": 0.6926,
+    "net_revenue": 5578038.78,
+    "net_profit": 2239404.37,
+    "net_profit_per_order": 100.7108,
+    "avg_order_value": 362.5711,
+    "avg_margin_pct": 39.6266,
+    "return_rate": 0.1039,
+    "avg_rating": 2.9918
+   },
+   {
+    "category": "Health",
+    "item_key": "Foam Roller",
+    "orders": 22363,
+    "conversion": 0.7035,
+    "net_revenue": 4555790.37,
+    "net_profit": 1820558.34,
+    "net_profit_per_order": 81.4094,
+    "avg_order_value": 288.7064,
+    "avg_margin_pct": 39.4678,
+    "return_rate": 0.0984,
+    "avg_rating": 2.9963
+   },
+   {
+    "category": "Health",
+    "item_key": "Resistance Bands Set",
+    "orders": 22366,
+    "conversion": 0.7036,
+    "net_revenue": 4536428.45,
+    "net_profit": 1806035.67,
+    "net_profit_per_order": 80.7492,
+    "avg_order_value": 288.2053,
+    "avg_margin_pct": 39.4246,
+    "return_rate": 0.099,
+    "avg_rating": 2.9926
+   },
+   {
+    "category": "Health",
+    "item_key": "Digital Thermometer",
+    "orders": 22137,
+    "conversion": 0.7015,
+    "net_revenue": 4479915.1,
+    "net_profit": 1791923.87,
+    "net_profit_per_order": 80.947,
+    "avg_order_value": 287.0407,
+    "avg_margin_pct": 39.5606,
+    "return_rate": 0.1051,
+    "avg_rating": 2.9941
+   },
+   {
+    "category": "Health",
+    "item_key": "Digital Blood Pressure Monitor",
+    "orders": 22161,
+    "conversion": 0.6997,
+    "net_revenue": 4472340.61,
+    "net_profit": 1782965.47,
+    "net_profit_per_order": 80.4551,
+    "avg_order_value": 288.5891,
+    "avg_margin_pct": 39.3572,
+    "return_rate": 0.0996,
+    "avg_rating": 2.9977
+   },
+   {
+    "category": "Health",
+    "item_key": "Massage Gun Deep Tissue",
+    "orders": 22289,
+    "conversion": 0.6993,
+    "net_revenue": 4442594.69,
+    "net_profit": 1780205.32,
+    "net_profit_per_order": 79.8692,
+    "avg_order_value": 286.3923,
+    "avg_margin_pct": 39.57,
+    "return_rate": 0.0974,
+    "avg_rating": 2.9915
+   },
+   {
+    "category": "Health",
+    "item_key": "Fitness Smart Band",
+    "orders": 22004,
+    "conversion": 0.6998,
+    "net_revenue": 4450741.94,
+    "net_profit": 1779097.38,
+    "net_profit_per_order": 80.8534,
+    "avg_order_value": 289.8665,
+    "avg_margin_pct": 39.5326,
+    "return_rate": 0.1012,
+    "avg_rating": 2.9848
+   },
+   {
+    "category": "Health",
+    "item_key": "Protein Shaker Bottle",
+    "orders": 22102,
+    "conversion": 0.6993,
+    "net_revenue": 4427964.76,
+    "net_profit": 1776193.41,
+    "net_profit_per_order": 80.3635,
+    "avg_order_value": 286.7257,
+    "avg_margin_pct": 39.5913,
+    "return_rate": 0.1016,
+    "avg_rating": 2.9931
+   },
+   {
+    "category": "Health",
+    "item_key": "Yoga Mat Non-Slip",
+    "orders": 22116,
+    "conversion": 0.6931,
+    "net_revenue": 4464648.38,
+    "net_profit": 1772591.81,
+    "net_profit_per_order": 80.1497,
+    "avg_order_value": 290.1403,
+    "avg_margin_pct": 39.4078,
+    "return_rate": 0.1011,
+    "avg_rating": 3.0084
+   },
+   {
+    "category": "Health",
+    "item_key": "Vitamin C Tablets",
+    "orders": 22036,
+    "conversion": 0.6945,
+    "net_revenue": 4377996.92,
+    "net_profit": 1749700.68,
+    "net_profit_per_order": 79.4019,
+    "avg_order_value": 285.9125,
+    "avg_margin_pct": 39.4489,
+    "return_rate": 0.0998,
+    "avg_rating": 3.0014
+   },
+   {
+    "category": "Clothing",
+    "item_key": "Cotton T-Shirt Pack",
+    "orders": 22336,
+    "conversion": 0.6989,
+    "net_revenue": 3572567.89,
+    "net_profit": 1419147.42,
+    "net_profit_per_order": 63.5363,
+    "avg_order_value": 227.7464,
+    "avg_margin_pct": 39.2909,
+    "return_rate": 0.0989,
+    "avg_rating": 3.0068
+   },
+   {
+    "category": "Clothing",
+    "item_key": "Hooded Sweatshirt",
+    "orders": 22267,
+    "conversion": 0.6968,
+    "net_revenue": 3530558.59,
+    "net_profit": 1413333.84,
+    "net_profit_per_order": 63.4721,
+    "avg_order_value": 226.8994,
+    "avg_margin_pct": 39.4715,
+    "return_rate": 0.1002,
+    "avg_rating": 2.9963
+   },
+   {
+    "category": "Clothing",
+    "item_key": "Running Shoes Air Zoom",
+    "orders": 22245,
+    "conversion": 0.7013,
+    "net_revenue": 3543590.66,
+    "net_profit": 1408700.13,
+    "net_profit_per_order": 63.3266,
+    "avg_order_value": 226.2413,
+    "avg_margin_pct": 39.3091,
+    "return_rate": 0.099,
+    "avg_rating": 2.9893
+   },
+   {
+    "category": "Clothing",
+    "item_key": "Baseball Cap",
+    "orders": 22175,
+    "conversion": 0.7033,
+    "net_revenue": 3535122.98,
+    "net_profit": 1407329.13,
+    "net_profit_per_order": 63.4647,
+    "avg_order_value": 227.0806,
+    "avg_margin_pct": 39.4293,
+    "return_rate": 0.098,
+    "avg_rating": 2.9967
+   },
+   {
+    "category": "Clothing",
+    "item_key": "Denim Jeans Slim Fit",
+    "orders": 22144,
+    "conversion": 0.7039,
+    "net_revenue": 3520679.44,
+    "net_profit": 1406599.68,
+    "net_profit_per_order": 63.5206,
+    "avg_order_value": 226.209,
+    "avg_margin_pct": 39.4689,
+    "return_rate": 0.102,
+    "avg_rating": 2.9983
+   },
+   {
+    "category": "Clothing",
+    "item_key": "Yoga Pants Leggings",
+    "orders": 22289,
+    "conversion": 0.6971,
+    "net_revenue": 3503610.02,
+    "net_profit": 1400593.51,
+    "net_profit_per_order": 62.8379,
+    "avg_order_value": 225.6456,
+    "avg_margin_pct": 39.515,
+    "return_rate": 0.0989,
+    "avg_rating": 2.9945
+   },
+   {
+    "category": "Clothing",
+    "item_key": "Sports Bra High Impact",
+    "orders": 22178,
+    "conversion": 0.6985,
+    "net_revenue": 3486812.95,
+    "net_profit": 1393458.66,
+    "net_profit_per_order": 62.8307,
+    "avg_order_value": 226.4564,
+    "avg_margin_pct": 39.6431,
+    "return_rate": 0.1011,
+    "avg_rating": 2.9992
+   },
+   {
+    "category": "Clothing",
+    "item_key": "Casual Sneakers",
+    "orders": 21923,
+    "conversion": 0.7009,
+    "net_revenue": 3479050.53,
+    "net_profit": 1389657.56,
+    "net_profit_per_order": 63.3881,
+    "avg_order_value": 226.6439,
+    "avg_margin_pct": 39.5303,
+    "return_rate": 0.1001,
+    "avg_rating": 3.0202
+   },
+   {
+    "category": "Clothing",
+    "item_key": "Winter Jacket Waterproof",
+    "orders": 21987,
+    "conversion": 0.7009,
+    "net_revenue": 3474507.84,
+    "net_profit": 1382251.66,
+    "net_profit_per_order": 62.8668,
+    "avg_order_value": 225.9782,
+    "avg_margin_pct": 39.3766,
+    "return_rate": 0.1021,
+    "avg_rating": 3.0005
+   }
+  ],
+  "within_category_item_spread": [
+   {
+    "category": "Clothing",
+    "items": 9,
+    "anova_p_net_profit": 0.9250142743386823,
+    "best_vs_worst_item_gap_pct": 0.01123106170341548
+   },
+   {
+    "category": "Electronics",
+    "items": 12,
+    "anova_p_net_profit": 0.9137362532566284,
+    "best_vs_worst_item_gap_pct": 0.021920543965261663
+   },
+   {
+    "category": "Health",
+    "items": 9,
+    "anova_p_net_profit": 0.5369106207888044,
+    "best_vs_worst_item_gap_pct": 0.025282488462960773
+   },
+   {
+    "category": "Home",
+    "items": 9,
+    "anova_p_net_profit": 0.6890031119435591,
+    "best_vs_worst_item_gap_pct": 0.017576399285846867
+   },
+   {
+    "category": "Sports",
+    "items": 9,
+    "anova_p_net_profit": 0.6055363346937026,
+    "best_vs_worst_item_gap_pct": 0.022521307166266658
+   }
+  ]
+ },
+ "marketing": {
+  "campaign_source": {
+   "p_conversion": 0.4083741967569331,
+   "rows": [
+    {
+     "orders": 166086,
+     "conversion": 0.7008,
+     "net_revenue": 47074917.64,
+     "net_profit": 18794577.16,
+     "net_profit_per_order": 113.1617,
+     "avg_order_value": 403.951,
+     "avg_margin_pct": 39.4541,
+     "return_rate": 0.0993,
+     "avg_rating": 3.0001,
+     "value": "Affiliate"
+    },
+    {
+     "orders": 166456,
+     "conversion": 0.6997,
+     "net_revenue": 47114156.72,
+     "net_profit": 18812045.55,
+     "net_profit_per_order": 113.0151,
+     "avg_order_value": 403.371,
+     "avg_margin_pct": 39.5026,
+     "return_rate": 0.1002,
+     "avg_rating": 2.999,
+     "value": "Email"
+    },
+    {
+     "orders": 167023,
+     "conversion": 0.7015,
+     "net_revenue": 47220109.34,
+     "net_profit": 18874555.04,
+     "net_profit_per_order": 113.0057,
+     "avg_order_value": 402.4797,
+     "avg_margin_pct": 39.5004,
+     "return_rate": 0.0985,
+     "avg_rating": 3.001,
+     "value": "Facebook"
+    },
+    {
+     "orders": 166783,
+     "conversion": 0.7007,
+     "net_revenue": 47009681.62,
+     "net_profit": 18732746.75,
+     "net_profit_per_order": 112.3181,
+     "avg_order_value": 403.7003,
+     "avg_margin_pct": 39.4192,
+     "return_rate": 0.1007,
+     "avg_rating": 3.0017,
+     "value": "Google Ads"
+    },
+    {
+     "orders": 166524,
+     "conversion": 0.6982,
+     "net_revenue": 47054662.99,
+     "net_profit": 18761059.07,
+     "net_profit_per_order": 112.6628,
+     "avg_order_value": 404.175,
+     "avg_margin_pct": 39.4368,
+     "return_rate": 0.1009,
+     "avg_rating": 2.9986,
+     "value": "Instagram"
+    },
+    {
+     "orders": 167251,
+     "conversion": 0.7001,
+     "net_revenue": 47120514.6,
+     "net_profit": 18819718.05,
+     "net_profit_per_order": 112.5238,
+     "avg_order_value": 401.7505,
+     "avg_margin_pct": 39.4778,
+     "return_rate": 0.0997,
+     "avg_rating": 2.9983,
+     "value": "Organic"
+    }
+   ]
+  },
+  "traffic_source": {
+   "p_conversion": 0.030199943570937707,
+   "rows": [
+    {
+     "orders": 199869,
+     "conversion": 0.7011,
+     "net_revenue": 56737420.39,
+     "net_profit": 22649799.6,
+     "net_profit_per_order": 113.3232,
+     "avg_order_value": 404.2534,
+     "avg_margin_pct": 39.4647,
+     "return_rate": 0.1007,
+     "avg_rating": 2.9956,
+     "value": "Direct"
+    },
+    {
+     "orders": 200122,
+     "conversion": 0.6992,
+     "net_revenue": 56590996.11,
+     "net_profit": 22592703.53,
+     "net_profit_per_order": 112.8947,
+     "avg_order_value": 403.2226,
+     "avg_margin_pct": 39.472,
+     "return_rate": 0.0998,
+     "avg_rating": 3.0009,
+     "value": "Email"
+    },
+    {
+     "orders": 199913,
+     "conversion": 0.7004,
+     "net_revenue": 56345096.77,
+     "net_profit": 22494532.84,
+     "net_profit_per_order": 112.5216,
+     "avg_order_value": 402.3843,
+     "avg_margin_pct": 39.4514,
+     "return_rate": 0.0995,
+     "avg_rating": 2.9979,
+     "value": "Referral"
+    },
+    {
+     "orders": 199903,
+     "conversion": 0.6978,
+     "net_revenue": 56186534.19,
+     "net_profit": 22414569.37,
+     "net_profit_per_order": 112.1272,
+     "avg_order_value": 402.9513,
+     "avg_margin_pct": 39.4533,
+     "return_rate": 0.0999,
+     "avg_rating": 3.0017,
+     "value": "Search"
+    },
+    {
+     "orders": 200316,
+     "conversion": 0.7021,
+     "net_revenue": 56733995.45,
+     "net_profit": 22643096.28,
+     "net_profit_per_order": 113.0369,
+     "avg_order_value": 403.3697,
+     "avg_margin_pct": 39.4844,
+     "return_rate": 0.0994,
+     "avg_rating": 3.0029,
+     "value": "Social"
+    }
+   ]
+  },
+  "device_type": {
+   "p_conversion": 0.2876572026401613,
+   "rows": [
+    {
+     "orders": 333056,
+     "conversion": 0.6992,
+     "net_revenue": 93883326.96,
+     "net_profit": 37489764.2,
+     "net_profit_per_order": 112.5629,
+     "avg_order_value": 402.7976,
+     "avg_margin_pct": 39.4631,
+     "return_rate": 0.0994,
+     "avg_rating": 2.9994,
+     "value": "Desktop"
+    },
+    {
+     "orders": 332247,
+     "conversion": 0.7004,
+     "net_revenue": 94026179.84,
+     "net_profit": 37502665.93,
+     "net_profit_per_order": 112.8759,
+     "avg_order_value": 403.5647,
+     "avg_margin_pct": 39.4407,
+     "return_rate": 0.0998,
+     "avg_rating": 2.9995,
+     "value": "Mobile"
+    },
+    {
+     "orders": 334820,
+     "conversion": 0.7009,
+     "net_revenue": 94684536.11,
+     "net_profit": 37802271.49,
+     "net_profit_per_order": 112.9033,
+     "avg_order_value": 403.3467,
+     "avg_margin_pct": 39.4915,
+     "return_rate": 0.1003,
+     "avg_rating": 3.0005,
+     "value": "Tablet"
+    }
+   ]
+  },
+  "coupon_used": {
+   "p_conversion": 0.9737007876753654,
+   "rows": [
+    {
+     "orders": 500083,
+     "conversion": 0.7001,
+     "net_revenue": 141329433.93,
+     "net_profit": 56436380.61,
+     "net_profit_per_order": 112.854,
+     "avg_order_value": 403.01,
+     "avg_margin_pct": 39.4661,
+     "return_rate": 0.0996,
+     "avg_rating": 3.0006,
+     "value": "false"
+    },
+    {
+     "orders": 500040,
+     "conversion": 0.7002,
+     "net_revenue": 141264608.98,
+     "net_profit": 56358321.01,
+     "net_profit_per_order": 112.7076,
+     "avg_order_value": 403.4626,
+     "avg_margin_pct": 39.4643,
+     "return_rate": 0.1001,
+     "avg_rating": 2.9989,
+     "value": "true"
+    }
+   ]
+  },
+  "discount_depth": {
+   "p_conversion": 0.4928550477044509,
+   "rows": [
+    {
+     "discount_percent": 0,
+     "orders": 299841,
+     "conversion": 0.7015,
+     "net_revenue": 92719833.53,
+     "net_profit": 41760410.05,
+     "net_profit_per_order": 139.2752,
+     "avg_order_value": 439.9165,
+     "avg_margin_pct": 45.0232,
+     "return_rate": 0.0998,
+     "avg_rating": 3.0007,
+     "discount_given": 0.0
+    },
+    {
+     "discount_percent": 5,
+     "orders": 199946,
+     "conversion": 0.6996,
+     "net_revenue": 58481957.5,
+     "net_profit": 24656436.21,
+     "net_profit_per_order": 123.3155,
+     "avg_order_value": 418.7247,
+     "avg_margin_pct": 42.1257,
+     "return_rate": 0.0999,
+     "avg_rating": 2.9994,
+     "discount_given": 4406439.2
+    },
+    {
+     "discount_percent": 10,
+     "orders": 200397,
+     "conversion": 0.7,
+     "net_revenue": 55755033.86,
+     "net_profit": 21675342.87,
+     "net_profit_per_order": 108.162,
+     "avg_order_value": 397.9915,
+     "avg_margin_pct": 38.8666,
+     "return_rate": 0.0992,
+     "avg_rating": 3.0008,
+     "discount_given": 8861809.38
+    },
+    {
+     "discount_percent": 15,
+     "orders": 150227,
+     "conversion": 0.6995,
+     "net_revenue": 39485448.46,
+     "net_profit": 13928865.69,
+     "net_profit_per_order": 92.7188,
+     "avg_order_value": 374.7449,
+     "avg_margin_pct": 35.3068,
+     "return_rate": 0.1006,
+     "avg_rating": 2.9939,
+     "discount_given": 9934728.29
+    },
+    {
+     "discount_percent": 20,
+     "orders": 99766,
+     "conversion": 0.6995,
+     "net_revenue": 24550655.0,
+     "net_profit": 7678311.47,
+     "net_profit_per_order": 76.9632,
+     "avg_order_value": 351.6164,
+     "avg_margin_pct": 31.2755,
+     "return_rate": 0.0996,
+     "avg_rating": 3.002,
+     "discount_given": 8769842.07
+    },
+    {
+     "discount_percent": 25,
+     "orders": 49946,
+     "conversion": 0.6981,
+     "net_revenue": 11601114.56,
+     "net_profit": 3095335.33,
+     "net_profit_per_order": 61.9736,
+     "avg_order_value": 330.8784,
+     "avg_margin_pct": 26.7156,
+     "return_rate": 0.1012,
+     "avg_rating": 3.0049,
+     "discount_given": 5508684.4
+    }
+   ]
+  }
+ },
+ "behaviour": {
+  "monthly": [
+   {
+    "ym": "2024-02",
+    "orders": 37052,
+    "conversion": 0.6971,
+    "net_revenue": 10409244.09,
+    "net_profit": 4169486.83,
+    "net_profit_per_order": 112.5307,
+    "avg_order_value": 402.2002,
+    "avg_margin_pct": 39.4855,
+    "return_rate": 0.0983,
+    "avg_rating": 3.0064
+   },
+   {
+    "ym": "2024-03",
+    "orders": 42716,
+    "conversion": 0.7029,
+    "net_revenue": 12055220.42,
+    "net_profit": 4817897.92,
+    "net_profit_per_order": 112.7891,
+    "avg_order_value": 401.245,
+    "avg_margin_pct": 39.5891,
+    "return_rate": 0.0983,
+    "avg_rating": 3.0081
+   },
+   {
+    "ym": "2024-04",
+    "orders": 41415,
+    "conversion": 0.7021,
+    "net_revenue": 11771344.93,
+    "net_profit": 4712528.53,
+    "net_profit_per_order": 113.788,
+    "avg_order_value": 404.2902,
+    "avg_margin_pct": 39.4869,
+    "return_rate": 0.0989,
+    "avg_rating": 3.0021
+   },
+   {
+    "ym": "2024-05",
+    "orders": 42697,
+    "conversion": 0.6987,
+    "net_revenue": 12045301.9,
+    "net_profit": 4805142.75,
+    "net_profit_per_order": 112.5405,
+    "avg_order_value": 402.9101,
+    "avg_margin_pct": 39.5061,
+    "return_rate": 0.1007,
+    "avg_rating": 3.007
+   },
+   {
+    "ym": "2024-06",
+    "orders": 40756,
+    "conversion": 0.7002,
+    "net_revenue": 11514856.53,
+    "net_profit": 4572970.75,
+    "net_profit_per_order": 112.2036,
+    "avg_order_value": 403.3891,
+    "avg_margin_pct": 39.4433,
+    "return_rate": 0.0981,
+    "avg_rating": 2.9951
+   },
+   {
+    "ym": "2024-07",
+    "orders": 42255,
+    "conversion": 0.7041,
+    "net_revenue": 12098633.17,
+    "net_profit": 4831064.45,
+    "net_profit_per_order": 114.3312,
+    "avg_order_value": 405.3089,
+    "avg_margin_pct": 39.4663,
+    "return_rate": 0.1002,
+    "avg_rating": 2.9981
+   },
+   {
+    "ym": "2024-08",
+    "orders": 42241,
+    "conversion": 0.7018,
+    "net_revenue": 11990502.21,
+    "net_profit": 4781183.46,
+    "net_profit_per_order": 113.1882,
+    "avg_order_value": 405.0725,
+    "avg_margin_pct": 39.4846,
+    "return_rate": 0.1009,
+    "avg_rating": 2.9984
+   },
+   {
+    "ym": "2024-09",
+    "orders": 41035,
+    "conversion": 0.6992,
+    "net_revenue": 11578458.16,
+    "net_profit": 4621563.97,
+    "net_profit_per_order": 112.6249,
+    "avg_order_value": 403.1587,
+    "avg_margin_pct": 39.3856,
+    "return_rate": 0.1024,
+    "avg_rating": 2.9964
+   },
+   {
+    "ym": "2024-10",
+    "orders": 42245,
+    "conversion": 0.699,
+    "net_revenue": 11871037.16,
+    "net_profit": 4749926.36,
+    "net_profit_per_order": 112.4376,
+    "avg_order_value": 402.7726,
+    "avg_margin_pct": 39.4678,
+    "return_rate": 0.0983,
+    "avg_rating": 3.0
+   },
+   {
+    "ym": "2024-11",
+    "orders": 40800,
+    "conversion": 0.6995,
+    "net_revenue": 11460357.01,
+    "net_profit": 4581539.87,
+    "net_profit_per_order": 112.2926,
+    "avg_order_value": 402.1212,
+    "avg_margin_pct": 39.4749,
+    "return_rate": 0.1026,
+    "avg_rating": 2.9971
+   },
+   {
+    "ym": "2024-12",
+    "orders": 42037,
+    "conversion": 0.6986,
+    "net_revenue": 11815734.63,
+    "net_profit": 4715666.72,
+    "net_profit_per_order": 112.179,
+    "avg_order_value": 401.283,
+    "avg_margin_pct": 39.5077,
+    "return_rate": 0.0997,
+    "avg_rating": 3.005
+   },
+   {
+    "ym": "2025-01",
+    "orders": 42536,
+    "conversion": 0.6992,
+    "net_revenue": 12046162.19,
+    "net_profit": 4814520.23,
+    "net_profit_per_order": 113.187,
+    "avg_order_value": 403.7468,
+    "avg_margin_pct": 39.4502,
+    "return_rate": 0.1015,
+    "avg_rating": 2.9905
+   },
+   {
+    "ym": "2025-02",
+    "orders": 38349,
+    "conversion": 0.6937,
+    "net_revenue": 10764413.18,
+    "net_profit": 4302570.4,
+    "net_profit_per_order": 112.1951,
+    "avg_order_value": 405.7485,
+    "avg_margin_pct": 39.4745,
+    "return_rate": 0.1,
+    "avg_rating": 2.9994
+   },
+   {
+    "ym": "2025-03",
+    "orders": 42363,
+    "conversion": 0.6996,
+    "net_revenue": 11962436.02,
+    "net_profit": 4763580.06,
+    "net_profit_per_order": 112.4467,
+    "avg_order_value": 402.3963,
+    "avg_margin_pct": 39.4883,
+    "return_rate": 0.0998,
+    "avg_rating": 3.0171
+   },
+   {
+    "ym": "2025-04",
+    "orders": 41021,
+    "conversion": 0.7042,
+    "net_revenue": 11633733.08,
+    "net_profit": 4653308.53,
+    "net_profit_per_order": 113.4372,
+    "avg_order_value": 404.6698,
+    "avg_margin_pct": 39.4811,
+    "return_rate": 0.0987,
+    "avg_rating": 3.0056
+   },
+   {
+    "ym": "2025-05",
+    "orders": 42403,
+    "conversion": 0.7003,
+    "net_revenue": 11972326.25,
+    "net_profit": 4764510.57,
+    "net_profit_per_order": 112.3626,
+    "avg_order_value": 402.7988,
+    "avg_margin_pct": 39.4476,
+    "return_rate": 0.098,
+    "avg_rating": 2.9905
+   },
+   {
+    "ym": "2025-06",
+    "orders": 40943,
+    "conversion": 0.7008,
+    "net_revenue": 11542569.69,
+    "net_profit": 4600706.63,
+    "net_profit_per_order": 112.3686,
+    "avg_order_value": 401.1607,
+    "avg_margin_pct": 39.3535,
+    "return_rate": 0.0982,
+    "avg_rating": 2.9987
+   },
+   {
+    "ym": "2025-07",
+    "orders": 42774,
+    "conversion": 0.6967,
+    "net_revenue": 11984932.89,
+    "net_profit": 4776258.41,
+    "net_profit_per_order": 111.6627,
+    "avg_order_value": 402.4211,
+    "avg_margin_pct": 39.435,
+    "return_rate": 0.1015,
+    "avg_rating": 2.9898
+   },
+   {
+    "ym": "2025-08",
+    "orders": 42558,
+    "conversion": 0.7019,
+    "net_revenue": 12104329.15,
+    "net_profit": 4823945.74,
+    "net_profit_per_order": 113.3499,
+    "avg_order_value": 402.5537,
+    "avg_margin_pct": 39.3903,
+    "return_rate": 0.0996,
+    "avg_rating": 2.9949
+   },
+   {
+    "ym": "2025-09",
+    "orders": 40970,
+    "conversion": 0.7022,
+    "net_revenue": 11575553.02,
+    "net_profit": 4626866.44,
+    "net_profit_per_order": 112.933,
+    "avg_order_value": 402.3342,
+    "avg_margin_pct": 39.5134,
+    "return_rate": 0.0985,
+    "avg_rating": 3.0059
+   },
+   {
+    "ym": "2025-10",
+    "orders": 42603,
+    "conversion": 0.7001,
+    "net_revenue": 12024194.31,
+    "net_profit": 4793479.67,
+    "net_profit_per_order": 112.5151,
+    "avg_order_value": 404.6174,
+    "avg_margin_pct": 39.499,
+    "return_rate": 0.0987,
+    "avg_rating": 3.002
+   },
+   {
+    "ym": "2025-11",
+    "orders": 40931,
+    "conversion": 0.7,
+    "net_revenue": 11526279.62,
+    "net_profit": 4580759.47,
+    "net_profit_per_order": 111.9142,
+    "avg_order_value": 402.1997,
+    "avg_margin_pct": 39.3888,
+    "return_rate": 0.1017,
+    "avg_rating": 2.9959
+   },
+   {
+    "ym": "2025-12",
+    "orders": 42575,
+    "conversion": 0.6997,
+    "net_revenue": 12074638.02,
+    "net_profit": 4834026.41,
+    "net_profit_per_order": 113.5414,
+    "avg_order_value": 403.9817,
+    "avg_margin_pct": 39.4641,
+    "return_rate": 0.1018,
+    "avg_rating": 3.004
+   },
+   {
+    "ym": "2026-01",
+    "orders": 42564,
+    "conversion": 0.7012,
+    "net_revenue": 12113721.67,
+    "net_profit": 4834932.7,
+    "net_profit_per_order": 113.5921,
+    "avg_order_value": 404.9521,
+    "avg_margin_pct": 39.463,
+    "return_rate": 0.1,
+    "avg_rating": 2.988
+   },
+   {
+    "ym": "2026-02",
+    "orders": 2284,
+    "conversion": 0.7014,
+    "net_revenue": 658063.61,
+    "net_profit": 266264.75,
+    "net_profit_per_order": 116.5783,
+    "avg_order_value": 409.658,
+    "avg_margin_pct": 39.7183,
+    "return_rate": 0.0989,
+    "avg_rating": 2.9891
+   }
+  ],
+  "hourly": [
+   {
+    "order_hour": 0,
+    "orders": 41439,
+    "net_profit": 4688185.92
+   },
+   {
+    "order_hour": 1,
+    "orders": 41860,
+    "net_profit": 4764324.11
+   },
+   {
+    "order_hour": 2,
+    "orders": 41719,
+    "net_profit": 4720236.33
+   },
+   {
+    "order_hour": 3,
+    "orders": 41851,
+    "net_profit": 4730579.11
+   },
+   {
+    "order_hour": 4,
+    "orders": 41480,
+    "net_profit": 4669454.99
+   },
+   {
+    "order_hour": 5,
+    "orders": 41896,
+    "net_profit": 4741906.49
+   },
+   {
+    "order_hour": 6,
+    "orders": 41712,
+    "net_profit": 4720480.54
+   },
+   {
+    "order_hour": 7,
+    "orders": 41871,
+    "net_profit": 4700610.35
+   },
+   {
+    "order_hour": 8,
+    "orders": 41844,
+    "net_profit": 4717363.69
+   },
+   {
+    "order_hour": 9,
+    "orders": 42068,
+    "net_profit": 4726860.98
+   },
+   {
+    "order_hour": 10,
+    "orders": 41571,
+    "net_profit": 4687462.86
+   },
+   {
+    "order_hour": 11,
+    "orders": 41812,
+    "net_profit": 4707338.09
+   },
+   {
+    "order_hour": 12,
+    "orders": 41789,
+    "net_profit": 4748856.57
+   },
+   {
+    "order_hour": 13,
+    "orders": 41344,
+    "net_profit": 4638253.72
+   },
+   {
+    "order_hour": 14,
+    "orders": 41509,
+    "net_profit": 4640908.13
+   },
+   {
+    "order_hour": 15,
+    "orders": 41933,
+    "net_profit": 4677668.27
+   },
+   {
+    "order_hour": 16,
+    "orders": 41640,
+    "net_profit": 4662387.28
+   },
+   {
+    "order_hour": 17,
+    "orders": 41394,
+    "net_profit": 4629963.69
+   },
+   {
+    "order_hour": 18,
+    "orders": 41508,
+    "net_profit": 4727090.01
+   },
+   {
+    "order_hour": 19,
+    "orders": 41819,
+    "net_profit": 4681379.4
+   },
+   {
+    "order_hour": 20,
+    "orders": 41589,
+    "net_profit": 4697682.07
+   },
+   {
+    "order_hour": 21,
+    "orders": 41517,
+    "net_profit": 4751898.42
+   },
+   {
+    "order_hour": 22,
+    "orders": 41450,
+    "net_profit": 4664809.33
+   },
+   {
+    "order_hour": 23,
+    "orders": 41508,
+    "net_profit": 4699001.27
+   }
+  ],
+  "weekday": [
+   {
+    "weekday": 1,
+    "orders": 143380,
+    "net_profit_per_order": 112.9668
+   },
+   {
+    "weekday": 2,
+    "orders": 142874,
+    "net_profit_per_order": 113.0152
+   },
+   {
+    "weekday": 3,
+    "orders": 142301,
+    "net_profit_per_order": 112.6366
+   },
+   {
+    "weekday": 4,
+    "orders": 142050,
+    "net_profit_per_order": 112.8695
+   },
+   {
+    "weekday": 5,
+    "orders": 142416,
+    "net_profit_per_order": 112.5957
+   },
+   {
+    "weekday": 6,
+    "orders": 143538,
+    "net_profit_per_order": 112.8807
+   },
+   {
+    "weekday": 7,
+    "orders": 143564,
+    "net_profit_per_order": 112.5008
+   }
+  ],
+  "age_band": [
+   {
+    "age_band": 10,
+    "orders": 34425,
+    "conversion": 0.6966,
+    "net_revenue": 9646132.94,
+    "net_profit": 3849108.14,
+    "net_profit_per_order": 111.8114,
+    "avg_order_value": 402.0229,
+    "avg_margin_pct": 39.4555,
+    "return_rate": 0.0986,
+    "avg_rating": 3.0046
+   },
+   {
+    "age_band": 20,
+    "orders": 172282,
+    "conversion": 0.7005,
+    "net_revenue": 48662018.42,
+    "net_profit": 19400860.39,
+    "net_profit_per_order": 112.6111,
+    "avg_order_value": 403.0856,
+    "avg_margin_pct": 39.4278,
+    "return_rate": 0.0997,
+    "avg_rating": 3.0007
+   },
+   {
+    "age_band": 30,
+    "orders": 172674,
+    "conversion": 0.6996,
+    "net_revenue": 48701927.48,
+    "net_profit": 19433741.92,
+    "net_profit_per_order": 112.5458,
+    "avg_order_value": 402.9893,
+    "avg_margin_pct": 39.4172,
+    "return_rate": 0.0995,
+    "avg_rating": 3.0026
+   },
+   {
+    "age_band": 40,
+    "orders": 172550,
+    "conversion": 0.6999,
+    "net_revenue": 48809070.67,
+    "net_profit": 19462676.12,
+    "net_profit_per_order": 112.7944,
+    "avg_order_value": 403.7498,
+    "avg_margin_pct": 39.4647,
+    "return_rate": 0.0994,
+    "avg_rating": 3.0012
+   },
+   {
+    "age_band": 50,
+    "orders": 172408,
+    "conversion": 0.7013,
+    "net_revenue": 48805771.58,
+    "net_profit": 19495694.68,
+    "net_profit_per_order": 113.0788,
+    "avg_order_value": 403.5228,
+    "avg_margin_pct": 39.5082,
+    "return_rate": 0.1006,
+    "avg_rating": 2.9952
+   },
+   {
+    "age_band": 60,
+    "orders": 172333,
+    "conversion": 0.6996,
+    "net_revenue": 48575812.44,
+    "net_profit": 19399803.32,
+    "net_profit_per_order": 112.5716,
+    "avg_order_value": 402.2053,
+    "avg_margin_pct": 39.4847,
+    "return_rate": 0.0994,
+    "avg_rating": 2.9993
+   },
+   {
+    "age_band": 70,
+    "orders": 103451,
+    "conversion": 0.701,
+    "net_revenue": 29393309.38,
+    "net_profit": 11752817.05,
+    "net_profit_per_order": 113.6076,
+    "avg_order_value": 404.6864,
+    "avg_margin_pct": 39.5072,
+    "return_rate": 0.1013,
+    "avg_rating": 2.998
+   }
+  ],
+  "country": [
+   {
+    "country": "Netherlands",
+    "orders": 100548,
+    "conversion": 0.7014,
+    "net_revenue": 28449425.51,
+    "net_profit": 11348945.03,
+    "net_profit_per_order": 112.8709,
+    "avg_order_value": 403.2407,
+    "avg_margin_pct": 39.4685,
+    "return_rate": 0.0995,
+    "avg_rating": 2.9945
+   },
+   {
+    "country": "Italy",
+    "orders": 99761,
+    "conversion": 0.7005,
+    "net_revenue": 28394139.23,
+    "net_profit": 11344653.85,
+    "net_profit_per_order": 113.7183,
+    "avg_order_value": 405.73,
+    "avg_margin_pct": 39.4383,
+    "return_rate": 0.1001,
+    "avg_rating": 2.9988
+   },
+   {
+    "country": "France",
+    "orders": 100147,
+    "conversion": 0.7021,
+    "net_revenue": 28321578.41,
+    "net_profit": 11315039.27,
+    "net_profit_per_order": 112.9843,
+    "avg_order_value": 401.7136,
+    "avg_margin_pct": 39.4794,
+    "return_rate": 0.0984,
+    "avg_rating": 3.0028
+   },
+   {
+    "country": "United Kingdom",
+    "orders": 100064,
+    "conversion": 0.7,
+    "net_revenue": 28282145.42,
+    "net_profit": 11289995.13,
+    "net_profit_per_order": 112.8277,
+    "avg_order_value": 403.147,
+    "avg_margin_pct": 39.4716,
+    "return_rate": 0.1005,
+    "avg_rating": 3.0039
+   },
+   {
+    "country": "Australia",
+    "orders": 99774,
+    "conversion": 0.7011,
+    "net_revenue": 28288497.66,
+    "net_profit": 11270684.65,
+    "net_profit_per_order": 112.9621,
+    "avg_order_value": 404.2269,
+    "avg_margin_pct": 39.4279,
+    "return_rate": 0.0992,
+    "avg_rating": 2.9905
+   },
+   {
+    "country": "Belgium",
+    "orders": 100357,
+    "conversion": 0.6994,
+    "net_revenue": 28219625.98,
+    "net_profit": 11267821.98,
+    "net_profit_per_order": 112.2774,
+    "avg_order_value": 402.7291,
+    "avg_margin_pct": 39.5074,
+    "return_rate": 0.1004,
+    "avg_rating": 3.0014
+   },
+   {
+    "country": "United States",
+    "orders": 99742,
+    "conversion": 0.6985,
+    "net_revenue": 28160424.46,
+    "net_profit": 11266164.94,
+    "net_profit_per_order": 112.9531,
+    "avg_order_value": 403.4078,
+    "avg_margin_pct": 39.523,
+    "return_rate": 0.101,
+    "avg_rating": 3.0017
+   },
+   {
+    "country": "Canada",
+    "orders": 100023,
+    "conversion": 0.6994,
+    "net_revenue": 28217015.54,
+    "net_profit": 11246207.3,
+    "net_profit_per_order": 112.4362,
+    "avg_order_value": 401.9355,
+    "avg_margin_pct": 39.4415,
+    "return_rate": 0.1006,
+    "avg_rating": 3.0026
+   },
+   {
+    "country": "Spain",
+    "orders": 100041,
+    "conversion": 0.6985,
+    "net_revenue": 28124012.75,
+    "net_profit": 11233245.54,
+    "net_profit_per_order": 112.2864,
+    "avg_order_value": 403.6074,
+    "avg_margin_pct": 39.4383,
+    "return_rate": 0.0987,
+    "avg_rating": 3.0048
+   },
+   {
+    "country": "Germany",
+    "orders": 99666,
+    "conversion": 0.7007,
+    "net_revenue": 28137177.95,
+    "net_profit": 11211943.93,
+    "net_profit_per_order": 112.4952,
+    "avg_order_value": 402.6354,
+    "avg_margin_pct": 39.4554,
+    "return_rate": 0.1002,
+    "avg_rating": 2.9968
+   }
+  ],
+  "p_weekday_orders": 0.010334077374137794,
+  "p_hour_orders": 0.5182032979742239,
+  "monthly_orders_cv": 0.025198164018305217
+ },
+ "returns": {
+  "by_reason": [
+   {
+    "return_reason": "Wrong Item",
+    "returns": 20061,
+    "profit_lost": 3212625.87,
+    "revenue_returned": 8056212.56
+   },
+   {
+    "return_reason": "Defective Product",
+    "returns": 20024,
+    "profit_lost": 3192552.03,
+    "revenue_returned": 8001182.89
+   },
+   {
+    "return_reason": "Better Price Elsewhere",
+    "returns": 19994,
+    "profit_lost": 3221446.18,
+    "revenue_returned": 8063634.23
+   },
+   {
+    "return_reason": "Changed Mind",
+    "returns": 19993,
+    "profit_lost": 3197978.71,
+    "revenue_returned": 8023123.12
+   },
+   {
+    "return_reason": "Not As Described",
+    "returns": 19807,
+    "profit_lost": 3161566.64,
+    "revenue_returned": 7916345.32
+   }
+  ],
+  "category": {
+   "p": 0.2130118896421437,
+   "rows": [
+    {
+     "orders": 199544,
+     "return_rate": 0.1,
+     "profit_lost": 1782957.82,
+     "value": "Clothing"
+    },
+    {
+     "orders": 200019,
+     "return_rate": 0.0984,
+     "profit_lost": 5497448.11,
+     "value": "Electronics"
+    },
+    {
+     "orders": 199574,
+     "return_rate": 0.1003,
+     "profit_lost": 2313794.73,
+     "value": "Health"
+    },
+    {
+     "orders": 200589,
+     "return_rate": 0.1001,
+     "profit_lost": 3481778.77,
+     "value": "Home"
+    },
+    {
+     "orders": 200397,
+     "return_rate": 0.1004,
+     "profit_lost": 2910190.0,
+     "value": "Sports"
+    }
+   ]
+  },
+  "quantity": {
+   "p": 0.22663780472348183,
+   "rows": [
+    {
+     "orders": 200961,
+     "return_rate": 0.1007,
+     "profit_lost": 1070943.93,
+     "value": "1"
+    },
+    {
+     "orders": 199950,
+     "return_rate": 0.1003,
+     "profit_lost": 2138847.71,
+     "value": "2"
+    },
+    {
+     "orders": 199686,
+     "return_rate": 0.0996,
+     "profit_lost": 3203954.36,
+     "value": "3"
+    },
+    {
+     "orders": 199813,
+     "return_rate": 0.1002,
+     "profit_lost": 4295895.67,
+     "value": "4"
+    },
+    {
+     "orders": 199713,
+     "return_rate": 0.0986,
+     "profit_lost": 5276527.76,
+     "value": "5"
+    }
+   ]
+  },
+  "discount_percent": {
+   "p": 0.669109195761368,
+   "rows": [
+    {
+     "orders": 299841,
+     "return_rate": 0.0998,
+     "profit_lost": 5857188.66,
+     "value": "0"
+    },
+    {
+     "orders": 199946,
+     "return_rate": 0.0999,
+     "profit_lost": 3556458.93,
+     "value": "5"
+    },
+    {
+     "orders": 200397,
+     "return_rate": 0.0992,
+     "profit_lost": 3076162.51,
+     "value": "10"
+    },
+    {
+     "orders": 150227,
+     "return_rate": 0.1006,
+     "profit_lost": 1974096.4,
+     "value": "15"
+    },
+    {
+     "orders": 99766,
+     "return_rate": 0.0996,
+     "profit_lost": 1094574.67,
+     "value": "20"
+    },
+    {
+     "orders": 49946,
+     "return_rate": 0.1012,
+     "profit_lost": 427688.26,
+     "value": "25"
+    }
+   ]
+  },
+  "shipping_method": {
+   "p": 0.9208500335099263,
+   "rows": [
+    {
+     "orders": 249777,
+     "return_rate": 0.1002,
+     "profit_lost": 4027096.46,
+     "value": "Economy"
+    },
+    {
+     "orders": 249585,
+     "return_rate": 0.0998,
+     "profit_lost": 3958611.39,
+     "value": "Express"
+    },
+    {
+     "orders": 250500,
+     "return_rate": 0.0997,
+     "profit_lost": 3992892.56,
+     "value": "Next Day"
+    },
+    {
+     "orders": 250261,
+     "return_rate": 0.0997,
+     "profit_lost": 4007569.02,
+     "value": "Standard"
+    }
+   ]
+  },
+  "payment_method": {
+   "p": 3.2303777316978537e-06,
+   "rows": [
+    {
+     "orders": 199814,
+     "return_rate": 0.0997,
+     "profit_lost": 3226555.76,
+     "value": "Apple Pay"
+    },
+    {
+     "orders": 200213,
+     "return_rate": 0.102,
+     "profit_lost": 3234243.03,
+     "value": "Bank Transfer"
+    },
+    {
+     "orders": 199410,
+     "return_rate": 0.1003,
+     "profit_lost": 3198801.51,
+     "value": "Credit Card"
+    },
+    {
+     "orders": 200805,
+     "return_rate": 0.1004,
+     "profit_lost": 3244411.62,
+     "value": "Debit Card"
+    },
+    {
+     "orders": 199881,
+     "return_rate": 0.0969,
+     "profit_lost": 3082157.51,
+     "value": "PayPal"
+    }
+   ]
+  },
+  "customer_segment": {
+   "p": 0.6194659687361532,
+   "rows": [
+    {
+     "orders": 300404,
+     "return_rate": 0.1003,
+     "profit_lost": 4818238.71,
+     "value": "Premium"
+    },
+    {
+     "orders": 599295,
+     "return_rate": 0.0997,
+     "profit_lost": 9589305.43,
+     "value": "Regular"
+    },
+    {
+     "orders": 100424,
+     "return_rate": 0.0996,
+     "profit_lost": 1578625.29,
+     "value": "VIP"
+    }
+   ]
+  },
+  "support_ticket_created": {
+   "p": 0.9177956906675786,
+   "rows": [
+    {
+     "orders": 500237,
+     "return_rate": 0.0999,
+     "profit_lost": 7984258.08,
+     "value": "false"
+    },
+    {
+     "orders": 499886,
+     "return_rate": 0.0998,
+     "profit_lost": 8001911.35,
+     "value": "true"
+    }
+   ]
+  },
+  "device_type": {
+   "p": 0.4668023559606025,
+   "rows": [
+    {
+     "orders": 333056,
+     "return_rate": 0.0994,
+     "profit_lost": 5301770.09,
+     "value": "Desktop"
+    },
+    {
+     "orders": 332247,
+     "return_rate": 0.0998,
+     "profit_lost": 5319541.02,
+     "value": "Mobile"
+    },
+    {
+     "orders": 334820,
+     "return_rate": 0.1003,
+     "profit_lost": 5364858.32,
+     "value": "Tablet"
+    }
+   ]
+  },
+  "monthly_return_rate": [
+   {
+    "ym": "2024-02",
+    "return_rate": 0.0983
+   },
+   {
+    "ym": "2024-03",
+    "return_rate": 0.0983
+   },
+   {
+    "ym": "2024-04",
+    "return_rate": 0.0989
+   },
+   {
+    "ym": "2024-05",
+    "return_rate": 0.1007
+   },
+   {
+    "ym": "2024-06",
+    "return_rate": 0.0981
+   },
+   {
+    "ym": "2024-07",
+    "return_rate": 0.1002
+   },
+   {
+    "ym": "2024-08",
+    "return_rate": 0.1009
+   },
+   {
+    "ym": "2024-09",
+    "return_rate": 0.1024
+   },
+   {
+    "ym": "2024-10",
+    "return_rate": 0.0983
+   },
+   {
+    "ym": "2024-11",
+    "return_rate": 0.1026
+   },
+   {
+    "ym": "2024-12",
+    "return_rate": 0.0997
+   },
+   {
+    "ym": "2025-01",
+    "return_rate": 0.1015
+   },
+   {
+    "ym": "2025-02",
+    "return_rate": 0.1
+   },
+   {
+    "ym": "2025-03",
+    "return_rate": 0.0998
+   },
+   {
+    "ym": "2025-04",
+    "return_rate": 0.0987
+   },
+   {
+    "ym": "2025-05",
+    "return_rate": 0.098
+   },
+   {
+    "ym": "2025-06",
+    "return_rate": 0.0982
+   },
+   {
+    "ym": "2025-07",
+    "return_rate": 0.1015
+   },
+   {
+    "ym": "2025-08",
+    "return_rate": 0.0996
+   },
+   {
+    "ym": "2025-09",
+    "return_rate": 0.0985
+   },
+   {
+    "ym": "2025-10",
+    "return_rate": 0.0987
+   },
+   {
+    "ym": "2025-11",
+    "return_rate": 0.1017
+   },
+   {
+    "ym": "2025-12",
+    "return_rate": 0.1018
+   },
+   {
+    "ym": "2026-01",
+    "return_rate": 0.1
+   },
+   {
+    "ym": "2026-02",
+    "return_rate": 0.0989
+   }
+  ],
+  "rating_returned_vs_not": [
+   {
+    "is_returned": false,
+    "avg_rating": 3.0,
+    "orders": 900244
+   },
+   {
+    "is_returned": true,
+    "avg_rating": 2.9981,
+    "orders": 99879
+   }
+  ],
+  "totals": {
+   "returned_orders": 99879,
+   "return_rate": 0.09986671639388356,
+   "revenue_returned": 40060498.12,
+   "profit_lost": 15986169.43
+  }
+ },
+ "risk": {
+  "by_fraud_band": [
+   {
+    "band": "[-inf, 20)",
+    "orders": 199831,
+    "conversion": 0.7005,
+    "return_rate": 0.1002,
+    "payment_failed_rate": 0.0499,
+    "revenue": 80653910.24
+   },
+   {
+    "band": "[20, 40)",
+    "orders": 199976,
+    "conversion": 0.7019,
+    "return_rate": 0.0981,
+    "payment_failed_rate": 0.0506,
+    "revenue": 80496674.04
+   },
+   {
+    "band": "[40, 60)",
+    "orders": 200271,
+    "conversion": 0.6983,
+    "return_rate": 0.1006,
+    "payment_failed_rate": 0.0495,
+    "revenue": 80851383.49
+   },
+   {
+    "band": "[60, 80)",
+    "orders": 200450,
+    "conversion": 0.6995,
+    "return_rate": 0.0999,
+    "payment_failed_rate": 0.05,
+    "revenue": 80748719.28
+   },
+   {
+    "band": "[80, inf)",
+    "orders": 199595,
+    "conversion": 0.7005,
+    "return_rate": 0.1006,
+    "payment_failed_rate": 0.0498,
+    "revenue": 80535169.95
+   }
+  ],
+  "payment_method": [
+   {
+    "payment_method": "Apple Pay",
+    "orders": 199814,
+    "failed_rate": 0.0499
+   },
+   {
+    "payment_method": "Bank Transfer",
+    "orders": 200213,
+    "failed_rate": 0.0497
+   },
+   {
+    "payment_method": "Credit Card",
+    "orders": 199410,
+    "failed_rate": 0.0501
+   },
+   {
+    "payment_method": "Debit Card",
+    "orders": 200805,
+    "failed_rate": 0.0502
+   },
+   {
+    "payment_method": "PayPal",
+    "orders": 199881,
+    "failed_rate": 0.0498
+   }
+  ],
+  "p_fraud_vs_return": 0.052851974227835906,
+  "high_risk_share_80plus": 0.1995704528343014,
+  "revenue_at_80plus": 80535169.95,
+  "return_rate_gap_pts": 0.24999999999999883
+ },
+ "opportunities": [
+  {
+   "id": "discount_cap",
+   "title": "Cap discounts at 10%",
+   "value_usd": 8801311.485499999,
+   "basis": "Discounts given on realized sales total $30.0M. Conversion is statistically unchanged by discount depth (p=0.49), so capping at 10% would recapture the excess as margin if that holds in practice.",
+   "assumption": "Conversion stays unchanged. This must be validated with an A/B test before rollout."
+  },
+  {
+   "id": "returns_cut",
+   "title": "Reduce returns by 20%",
+   "value_usd": 3197233.886,
+   "basis": "Returned orders lost $16.0M of profit. 'Wrong Item' and 'Not As Described' (40% of returns) are fixable with catalogue and fulfilment quality.",
+   "assumption": "Returns fall 20% overall. The two fixable reasons are about 40% of returns, so this needs half of those removed."
+  },
+  {
+   "id": "stuck_orders",
+   "title": "Clear Pending/Processing orders that are already paid",
+   "value_usd": 13397903.91,
+   "basis": "83,203 paid orders are stuck in Pending/Processing, holding $13.4M of profit.",
+   "assumption": "These are genuine orders. Status conflicts (23% of rows) suggest a data issue, so check them first."
+  },
+  {
+   "id": "payment_recovery",
+   "title": "Recover 25% of failed payments",
+   "value_usd": 1334367.995,
+   "basis": "33,328 orders have a failed payment and were not cancelled, worth $5.3M in profit.",
+   "assumption": "A retry or alternative payment flow converts 25%."
+  },
+  {
+   "id": "mix_shift",
+   "title": "Shift 10% of Clothing demand towards Electronics via recommendations",
+   "value_usd": 1856270.2558,
+   "basis": "Net profit per order is $196 in Electronics and $63 in Clothing; 139,715 Clothing orders completed. This is what the profit-aware re-ranker in Phase 2 does.",
+   "assumption": "Customers accept the cross-category suggestion. Phase 2 measured +22% profit captured at lambda=0.25 without losing hit rate."
+  }
+ ],
+ "operations": {
+  "delivery_by_method": [
+   {
+    "shipping_method": "Economy",
+    "avg_delivery_days": 7.5049,
+    "avg_shipping_cost": 12.5072,
+    "avg_rating": 2.999
+   },
+   {
+    "shipping_method": "Express",
+    "avg_delivery_days": 7.5067,
+    "avg_shipping_cost": 12.501,
+    "avg_rating": 2.9977
+   },
+   {
+    "shipping_method": "Next Day",
+    "avg_delivery_days": 7.5192,
+    "avg_shipping_cost": 12.4979,
+    "avg_rating": 2.9991
+   },
+   {
+    "shipping_method": "Standard",
+    "avg_delivery_days": 7.4957,
+    "avg_shipping_cost": 12.5118,
+    "avg_rating": 3.0033
+   }
+  ],
+  "status_conflict_rate": 0.23247940503318093
+ },
+ "findings": [
+  "Electronics generates 34.8% of net profit from 20.0% of orders; Clothing generates 11.2% from 20.0%.",
+  "Within a category the 48 items are statistically indistinguishable (best vs. worst item differs by only 1% to 3%, ANOVA p between 0.5 and 0.9); category is the real unit of performance.",
+  "Campaign sources are within 0.8% of each other on net profit per order (Affiliate best, Google Ads worst; conversion p=0.41): no channel is meaningfully better.",
+  "Discounts do not lift conversion (p=0.49) but cut margin from 45.0% at 0% off to 26.7% at 25% off.",
+  "Monthly order volume is flat (coefficient of variation 2.5% over full months) with no seasonality, and orders are uniform across hours (chi-square p=0.52). Weekday volume differs by only 1.1% (Sat/Sun slightly higher).",
+  "Returns: 10.0% of orders, $16.0M profit lost. The five reasons are evenly split (19.8% to 20.1% each). Return rate does not differ significantly by category (p=0.21), shipping method (p=0.92), customer segment (p=0.62), quantity (p=0.23).",
+  "The only detectable return driver is payment method (p<0.001), but the effect is small: PayPal 9.7% vs Bank Transfer 10.2% (0.5 points). With 1M rows even tiny gaps are significant, so effect size matters more than p-values.",
+  "Fraud score looks uniform 0 to 100: 20.0% of orders score 80+. Return rate varies by at most 0.2 points across fraud bands (p=0.05), so the score is a policy filter, not a validated risk signal.",
+  "Opportunity: Cap discounts at 10%: about $8.8M (Conversion stays unchanged. This must be validated with an A/B test before rollout.)",
+  "Opportunity: Reduce returns by 20%: about $3.2M (Returns fall 20% overall. The two fixable reasons are about 40% of returns, so this needs half of those removed.)",
+  "Opportunity: Clear Pending/Processing orders that are already paid: about $13.4M (These are genuine orders. Status conflicts (23% of rows) suggest a data issue, so check them first.)",
+  "Opportunity: Recover 25% of failed payments: about $1.3M (A retry or alternative payment flow converts 25%.)",
+  "Opportunity: Shift 10% of Clothing demand towards Electronics via recommendations: about $1.9M (Customers accept the cross-category suggestion. Phase 2 measured +22% profit captured at lambda=0.25 without losing hit rate.)",
+  "Express, Next Day, Standard and Economy shipping all average about 7.5 delivery days: the shipping method does not change delivery time in this data."
+ ]
+}

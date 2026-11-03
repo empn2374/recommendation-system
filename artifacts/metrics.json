@@ -1,0 +1,207 @@
+{
+  "split_date": "2025-11-01",
+  "n_train": 871769,
+  "n_test": 89889,
+  "models": {
+    "random": {
+      "@5": {
+        "hit": 0.10520753373605224,
+        "hit_ci95": 0.0020057988423130358,
+        "ndcg": 0.06332211598759974,
+        "coverage": 0.10416666666666667,
+        "captured_profit_per_customer": 17.375173602999254,
+        "avg_list_item_value": 121.12673006718845
+      },
+      "@10": {
+        "hit": 0.21334089821891444,
+        "hit_ci95": 0.002678139175972653,
+        "ndcg": 0.09764429155915787,
+        "coverage": 0.20833333333333334,
+        "captured_profit_per_customer": 30.874052108711854,
+        "avg_list_item_value": 103.91495977226137
+      }
+    },
+    "popularity": {
+      "@5": {
+        "hit": 0.11120381804225211,
+        "hit_ci95": 0.0020552456431988646,
+        "ndcg": 0.06617487275940082,
+        "coverage": 0.10416666666666667,
+        "captured_profit_per_customer": 14.559805760437872,
+        "avg_list_item_value": 90.20742706947027
+      },
+      "@10": {
+        "hit": 0.2231196253156671,
+        "hit_ci95": 0.002721753299758239,
+        "ndcg": 0.1018999752433918,
+        "coverage": 0.20833333333333334,
+        "captured_profit_per_customer": 31.513249897095307,
+        "avg_list_item_value": 98.0598495241675
+      }
+    },
+    "trending_90d": {
+      "@5": {
+        "hit": 0.11053632813803692,
+        "hit_ci95": 0.002049837440358357,
+        "ndcg": 0.0648745060879175,
+        "coverage": 0.10416666666666667,
+        "captured_profit_per_customer": 13.02979830680061,
+        "avg_list_item_value": 81.92929478792678
+      },
+      "@10": {
+        "hit": 0.2219403931515536,
+        "hit_ci95": 0.002716610700854255,
+        "ndcg": 0.10039393523840957,
+        "coverage": 0.20833333333333334,
+        "captured_profit_per_customer": 27.488400694189497,
+        "avg_list_item_value": 86.04462490021363
+      }
+    },
+    "segment_popularity": {
+      "@5": {
+        "hit": 0.11210492941294263,
+        "hit_ci95": 0.002062509578226645,
+        "ndcg": 0.0664548929807595,
+        "coverage": 0.75,
+        "captured_profit_per_customer": 14.761588069730447,
+        "avg_list_item_value": 91.63728441010088
+      },
+      "@10": {
+        "hit": 0.22469935142230973,
+        "hit_ci95": 0.002728593121126509,
+        "ndcg": 0.10236118062289226,
+        "coverage": 0.75,
+        "captured_profit_per_customer": 30.25915417904304,
+        "avg_list_item_value": 93.0891444113361
+      }
+    },
+    "profile_naive_bayes": {
+      "@5": {
+        "hit": 0.1115820623213074,
+        "hit_ci95": 0.0020582998773995974,
+        "ndcg": 0.06608143234882491,
+        "coverage": 0.7708333333333334,
+        "captured_profit_per_customer": 14.731663051096351,
+        "avg_list_item_value": 91.2981046016982
+      },
+      "@10": {
+        "hit": 0.22220738911323967,
+        "hit_ci95": 0.00271777783007975,
+        "ndcg": 0.10138964936392883,
+        "coverage": 0.8958333333333334,
+        "captured_profit_per_customer": 29.07219848924785,
+        "avg_list_item_value": 91.35695088777129
+      }
+    },
+    "profile_logreg": {
+      "@5": {
+        "hit": 0.11178230929257195,
+        "hit_ci95": 0.002059913789895898,
+        "ndcg": 0.06619907351227977,
+        "coverage": 0.9375,
+        "captured_profit_per_customer": 14.898383673196944,
+        "avg_list_item_value": 92.74627409799048
+      },
+      "@10": {
+        "hit": 0.22242988574797806,
+        "hit_ci95": 0.002718749199027822,
+        "ndcg": 0.1014975610357801,
+        "coverage": 0.9791666666666666,
+        "captured_profit_per_customer": 29.486983946867802,
+        "avg_list_item_value": 92.53113369285082
+      }
+    },
+    "hybrid(logreg+popularity)": {
+      "@5": {
+        "hit": 0.11223842739378567,
+        "hit_ci95": 0.0020635821118908594,
+        "ndcg": 0.06650779609989334,
+        "coverage": 0.7708333333333334,
+        "captured_profit_per_customer": 14.963574408437072,
+        "avg_list_item_value": 92.6286476362029
+      },
+      "@10": {
+        "hit": 0.22241876091624113,
+        "hit_ci95": 0.0027187006573053847,
+        "ndcg": 0.10167745190145785,
+        "coverage": 0.7916666666666666,
+        "captured_profit_per_customer": 29.45568067282982,
+        "avg_list_item_value": 92.24164737854547
+      }
+    }
+  },
+  "pareto": [
+    {
+      "lambda": 0.0,
+      "hit": 0.11223842739378567,
+      "hit_ci95": 0.0020635821118908594,
+      "ndcg": 0.06650779609989334,
+      "coverage": 0.7708333333333334,
+      "captured_profit_per_customer": 14.963574408437072,
+      "avg_list_item_value": 92.6286476362029,
+      "top5_categories": {
+        "Sports": 2,
+        "Health": 2,
+        "Home": 1
+      }
+    },
+    {
+      "lambda": 0.25,
+      "hit": 0.11160431198478123,
+      "hit_ci95": 0.0020584793046088726,
+      "ndcg": 0.06578322842439743,
+      "coverage": 1.0,
+      "captured_profit_per_customer": 18.286652649378677,
+      "avg_list_item_value": 114.4006542467867,
+      "top5_categories": {
+        "Home": 3,
+        "Sports": 1,
+        "Health": 1
+      }
+    },
+    {
+      "lambda": 0.5,
+      "hit": 0.0846377198544872,
+      "hit_ci95": 0.0018196224250423224,
+      "ndcg": 0.04985126348052422,
+      "coverage": 0.4375,
+      "captured_profit_per_customer": 23.61787326591685,
+      "avg_list_item_value": 196.24866699709574,
+      "top5_categories": {
+        "Electronics": 5
+      }
+    },
+    {
+      "lambda": 0.75,
+      "hit": 0.08437072389280112,
+      "hit_ci95": 0.0018170150296723186,
+      "ndcg": 0.04960265084352743,
+      "coverage": 0.25,
+      "captured_profit_per_customer": 23.559628541868307,
+      "avg_list_item_value": 196.61067402259627,
+      "top5_categories": {
+        "Electronics": 5
+      }
+    },
+    {
+      "lambda": 1.0,
+      "hit": 0.08373660848379669,
+      "hit_ci95": 0.0018108006758008933,
+      "ndcg": 0.04958847679627528,
+      "coverage": 0.10416666666666667,
+      "captured_profit_per_customer": 23.079805760437875,
+      "avg_list_item_value": 197.47011052572878,
+      "top5_categories": {
+        "Electronics": 5
+      }
+    }
+  ],
+  "paired_vs_popularity": {
+    "model": "profile_logreg",
+    "diff": 0.000578491250319839,
+    "ci95": [
+      -0.002235084839949427,
+      0.003392067340589105
+    ]
+  }
+}

@@ -1,0 +1,517 @@
+{
+  "value_tiers": [
+    {
+      "value_tier": "Top 10%",
+      "customers": 100008,
+      "profit": 47845085.78,
+      "avg_profit": 478.4125847932166,
+      "profit_share": 0.4241784861596408,
+      "customer_share": 0.09999570052883495
+    },
+    {
+      "value_tier": "High value",
+      "customers": 400043,
+      "profit": 58552735.25000003,
+      "avg_profit": 146.36610376884494,
+      "profit_share": 0.5191089156586575,
+      "customer_share": 0.3999938007625062
+    },
+    {
+      "value_tier": "Standard",
+      "customers": 200181,
+      "profit": 6396880.590000001,
+      "avg_profit": 31.955483237669913,
+      "profit_share": 0.05671259818170171,
+      "customer_share": 0.20015638076516587
+    },
+    {
+      "value_tier": "No realised value",
+      "customers": 299891,
+      "profit": 0.0,
+      "avg_profit": 0.0,
+      "profit_share": 0.0,
+      "customer_share": 0.2998541179434929
+    }
+  ],
+  "pareto": {
+    "1": 0.07879737028732935,
+    "5": 0.2664912936359931,
+    "10": 0.4241892770920364,
+    "20": 0.6391614765991521,
+    "50": 0.9432925022351425
+  },
+  "high_value_threshold": 304.29,
+  "high_value_by_category": {
+    "Clothing": 0.01039870905664916,
+    "Health": 0.03961938929920731,
+    "Sports": 0.08049022689960429,
+    "Home": 0.1210684534047231,
+    "Electronics": 0.24805643463870933
+  },
+  "high_value_auc_profile_only": 0.5041688437690974,
+  "silhouette": {
+    "3": 0.07031891598640228,
+    "4": 0.06479814920450715,
+    "5": 0.06663220627654237,
+    "6": 0.06788794550863565,
+    "8": 0.06893203599233359
+  },
+  "clusters": [
+    {
+      "customers": 242622,
+      "qty": 3.387310301621452,
+      "price": 175.03763327315738,
+      "disc": 10.021020352647328,
+      "age": 52.777171897025,
+      "loyalty": 28.104232097666323,
+      "tenure_d": 650.0737690728788,
+      "fraud": 44.83706753715658,
+      "session": 20.53646124424,
+      "pages": 12.89420580161733,
+      "avg_net_profit": 144.76215825440394,
+      "return_rate": 0.09913363173990818,
+      "cluster": "Cluster A (highest value)"
+    },
+    {
+      "customers": 246521,
+      "qty": 3.366836902332864,
+      "price": 155.31653976740313,
+      "disc": 7.836249244486271,
+      "age": 44.30570620758475,
+      "loyalty": 73.67579557116834,
+      "tenure_d": 894.8368293167722,
+      "fraud": 46.772029969049285,
+      "session": 19.5541195273425,
+      "pages": 8.204372041327108,
+      "avg_net_profit": 135.44888183968104,
+      "return_rate": 0.09942357851866575,
+      "cluster": "Cluster B"
+    },
+    {
+      "customers": 259494,
+      "qty": 2.538270634388464,
+      "price": 170.87084714868175,
+      "disc": 8.51746090468373,
+      "age": 52.338512643837625,
+      "loyalty": 57.51138639043679,
+      "tenure_d": 586.5001772680679,
+      "fraud": 41.02956253323779,
+      "session": 46.01485891773991,
+      "pages": 9.584229307806732,
+      "avg_net_profit": 111.17105432110182,
+      "return_rate": 0.10024123871842894,
+      "cluster": "Cluster C"
+    },
+    {
+      "customers": 251486,
+      "qty": 2.73270877901752,
+      "price": 87.23335772170216,
+      "disc": 7.665337235472352,
+      "age": 36.54731078469577,
+      "loyalty": 40.055811059064915,
+      "tenure_d": 798.2586227463954,
+      "fraud": 67.24861026061096,
+      "session": 34.874343701041006,
+      "pages": 11.409653022434648,
+      "avg_net_profit": 61.36724068138986,
+      "return_rate": 0.10062190340615382,
+      "cluster": "Cluster D (lowest value)"
+    }
+  ],
+  "cluster_eta2": {
+    "age": 0.15891292221135667,
+    "customer_loyalty_score": 0.35213235924506636,
+    "tenure_days": 0.0764241245745685,
+    "session_duration_minutes": 0.4166248053370378,
+    "pages_visited": 0.09369284179382541,
+    "fraud_risk_score": 0.12584101987493757,
+    "quantity": 0.07133886628867542,
+    "discount_percent": 0.014647412948232344,
+    "log_price": 0.16878876088444766
+  },
+  "cluster_k": 4,
+  "behaviour": {
+    "device_type": {
+      "p_conversion": 0.2876572026401613,
+      "p_profit": 0.6065627219068161,
+      "profit_spread": 0.0030175461132001054,
+      "rows": [
+        {
+          "value": "Desktop",
+          "n": 333056,
+          "conversion": 0.6991647050345888,
+          "avg_net_profit": 112.56294497021526,
+          "aov": 402.79759085559175,
+          "return_rate": 0.09943072636433513
+        },
+        {
+          "value": "Mobile",
+          "n": 332247,
+          "conversion": 0.7003825467197597,
+          "avg_net_profit": 112.87586021845202,
+          "aov": 403.56471017044555,
+          "return_rate": 0.09983235364051443
+        },
+        {
+          "value": "Tablet",
+          "n": 334820,
+          "conversion": 0.7008870437847201,
+          "avg_net_profit": 112.90326590406791,
+          "aov": 403.34668872827206,
+          "return_rate": 0.1003345080939012
+        }
+      ]
+    },
+    "campaign_source": {
+      "p_conversion": 0.40837419675693404,
+      "p_profit": 0.5773433476607694,
+      "profit_spread": 0.007480287981761067,
+      "rows": [
+        {
+          "value": "Affiliate",
+          "n": 166086,
+          "conversion": 0.70077550184844,
+          "avg_net_profit": 113.16171838685989,
+          "aov": 403.9510024926845,
+          "return_rate": 0.09925580723239767
+        },
+        {
+          "value": "Email",
+          "n": 166456,
+          "conversion": 0.6996743884269717,
+          "avg_net_profit": 113.01512441726334,
+          "aov": 403.3709651199115,
+          "return_rate": 0.10018263084538857
+        },
+        {
+          "value": "Facebook",
+          "n": 167023,
+          "conversion": 0.7014662651251624,
+          "avg_net_profit": 113.00572400208357,
+          "aov": 402.47971812265365,
+          "return_rate": 0.09846548080204523
+        },
+        {
+          "value": "Google Ads",
+          "n": 166783,
+          "conversion": 0.7006649358747594,
+          "avg_net_profit": 112.31808247843003,
+          "aov": 403.7003168788184,
+          "return_rate": 0.10067572834161755
+        },
+        {
+          "value": "Instagram",
+          "n": 166524,
+          "conversion": 0.6982116691888256,
+          "avg_net_profit": 112.6627937714684,
+          "aov": 404.17501687444457,
+          "return_rate": 0.10089836900386731
+        },
+        {
+          "value": "Organic",
+          "n": 167251,
+          "conversion": 0.7000795211986774,
+          "avg_net_profit": 112.52379985769893,
+          "aov": 401.7505008041804,
+          "return_rate": 0.09972436637150152
+        }
+      ]
+    },
+    "traffic_source": {
+      "p_conversion": 0.030199943570937728,
+      "p_profit": 0.12211484001874509,
+      "profit_spread": 0.0106046153774956,
+      "rows": [
+        {
+          "value": "Direct",
+          "n": 199869,
+          "conversion": 0.7011392462062651,
+          "avg_net_profit": 113.32322471218647,
+          "aov": 404.2534029289184,
+          "return_rate": 0.10072097223681512
+        },
+        {
+          "value": "Email",
+          "n": 200122,
+          "conversion": 0.6992084828254764,
+          "avg_net_profit": 112.8946519123335,
+          "aov": 403.2226096081391,
+          "return_rate": 0.09975914692037857
+        },
+        {
+          "value": "Referral",
+          "n": 199913,
+          "conversion": 0.7004146803859679,
+          "avg_net_profit": 112.52161110082888,
+          "aov": 402.3842801618706,
+          "return_rate": 0.09950828610445543
+        },
+        {
+          "value": "Search",
+          "n": 199903,
+          "conversion": 0.697833449222873,
+          "avg_net_profit": 112.12722855584957,
+          "aov": 402.95129397757927,
+          "return_rate": 0.09991345802714316
+        },
+        {
+          "value": "Social",
+          "n": 200316,
+          "conversion": 0.7021306335989137,
+          "avg_net_profit": 113.03688312466298,
+          "aov": 403.36966298248757,
+          "return_rate": 0.09943289602428164
+        }
+      ]
+    },
+    "coupon_used": {
+      "p_conversion": 0.9737007876753654,
+      "p_profit": 0.6353667133351769,
+      "profit_spread": 0.001298111089527433,
+      "rows": [
+        {
+          "value": "false",
+          "n": 500083,
+          "conversion": 0.7001297784567762,
+          "avg_net_profit": 112.85402745144303,
+          "aov": 403.00995656720977,
+          "return_rate": 0.09961746350105882
+        },
+        {
+          "value": "true",
+          "n": 500040,
+          "conversion": 0.7001619870410367,
+          "avg_net_profit": 112.70762540996726,
+          "aov": 403.4625807735381,
+          "return_rate": 0.10011599072074234
+        }
+      ]
+    },
+    "abandoned_cart_before": {
+      "p_conversion": 0.3690724032171546,
+      "p_profit": 0.29571790707950296,
+      "profit_spread": 0.0028625532181499216,
+      "rows": [
+        {
+          "value": "false",
+          "n": 499652,
+          "conversion": 0.6997330141778678,
+          "avg_net_profit": 112.6192770168037,
+          "aov": 403.04286175177936,
+          "return_rate": 0.1002077445902348
+        },
+        {
+          "value": "true",
+          "n": 500471,
+          "conversion": 0.7005580742940151,
+          "avg_net_profit": 112.9421177650653,
+          "aov": 403.42933964205724,
+          "return_rate": 0.099526246276008
+        }
+      ]
+    },
+    "is_weekend": {
+      "p_conversion": 0.09435000552398604,
+      "p_profit": 0.7111921248673703,
+      "profit_spread": 0.0011205253546751203,
+      "rows": [
+        {
+          "value": "false",
+          "n": 713021,
+          "conversion": 0.7006329406847764,
+          "avg_net_profit": 112.8170986268287,
+          "aov": 403.1944296451297,
+          "return_rate": 0.0996983258557602
+        },
+        {
+          "value": "true",
+          "n": 287102,
+          "conversion": 0.6989362665533504,
+          "avg_net_profit": 112.690754992999,
+          "aov": 403.3401424580813,
+          "return_rate": 0.1002849161622002
+        }
+      ]
+    },
+    "gender": {
+      "p_conversion": 0.65765040805531,
+      "p_profit": 0.9696217332990321,
+      "profit_spread": 0.00010425342295391757,
+      "rows": [
+        {
+          "value": "Female",
+          "n": 499943,
+          "conversion": 0.6999417933644435,
+          "avg_net_profit": 112.78670986492453,
+          "aov": 403.197198260602,
+          "return_rate": 0.09958535273021124
+        },
+        {
+          "value": "Male",
+          "n": 500180,
+          "conversion": 0.7003498740453437,
+          "avg_net_profit": 112.77495207725221,
+          "aov": 403.27530111159973,
+          "return_rate": 0.1001479467391739
+        }
+      ]
+    },
+    "country": {
+      "p_conversion": 0.698772210560372,
+      "p_profit": 0.627650035934469,
+      "profit_spread": 0.012776386227825134,
+      "rows": [
+        {
+          "value": "Australia",
+          "n": 99774,
+          "conversion": 0.7010543829053661,
+          "avg_net_profit": 112.9621409385211,
+          "aov": 404.22694208912145,
+          "return_rate": 0.09924429210014633
+        },
+        {
+          "value": "Belgium",
+          "n": 100357,
+          "conversion": 0.6993632731149795,
+          "avg_net_profit": 112.27738951941569,
+          "aov": 402.72905646840786,
+          "return_rate": 0.10044142411590622
+        },
+        {
+          "value": "Canada",
+          "n": 100023,
+          "conversion": 0.6993891404976855,
+          "avg_net_profit": 112.43621267108564,
+          "aov": 401.9354866380731,
+          "return_rate": 0.10062685582316068
+        },
+        {
+          "value": "France",
+          "n": 100147,
+          "conversion": 0.7021278720281187,
+          "avg_net_profit": 112.98430577051731,
+          "aov": 401.71363695367813,
+          "return_rate": 0.09837538817937631
+        },
+        {
+          "value": "Germany",
+          "n": 99666,
+          "conversion": 0.7007103726446331,
+          "avg_net_profit": 112.49517317841594,
+          "aov": 402.6354359560933,
+          "return_rate": 0.10018461661950916
+        },
+        {
+          "value": "Italy",
+          "n": 99761,
+          "conversion": 0.7005042050500697,
+          "avg_net_profit": 113.71832529746092,
+          "aov": 405.7300347831318,
+          "return_rate": 0.10006916530507914
+        },
+        {
+          "value": "Netherlands",
+          "n": 100548,
+          "conversion": 0.7013565660182202,
+          "avg_net_profit": 112.870917671162,
+          "aov": 403.24070583204036,
+          "return_rate": 0.0995047141663683
+        },
+        {
+          "value": "Spain",
+          "n": 100041,
+          "conversion": 0.6984936176167771,
+          "avg_net_profit": 112.28641796863285,
+          "aov": 403.6074160594157,
+          "return_rate": 0.0986695454863506
+        },
+        {
+          "value": "United Kingdom",
+          "n": 100064,
+          "conversion": 0.6999920051167253,
+          "avg_net_profit": 112.8277415454109,
+          "aov": 403.1469601455067,
+          "return_rate": 0.10054565078349856
+        },
+        {
+          "value": "United States",
+          "n": 99742,
+          "conversion": 0.6984620320426701,
+          "avg_net_profit": 112.953068316256,
+          "aov": 403.40777806741386,
+          "return_rate": 0.10101060736700687
+        }
+      ]
+    },
+    "customer_segment": {
+      "p_conversion": 0.3987307666403839,
+      "p_profit": 0.5815486989668233,
+      "profit_spread": 0.004083233449157204,
+      "rows": [
+        {
+          "value": "Premium",
+          "n": 300404,
+          "conversion": 0.7004400740336347,
+          "avg_net_profit": 112.91352651762294,
+          "aov": 403.62259850068574,
+          "return_rate": 0.10031158040505453
+        },
+        {
+          "value": "Regular",
+          "n": 599295,
+          "conversion": 0.6997305166904446,
+          "avg_net_profit": 112.6576994635363,
+          "aov": 403.24963795793406,
+          "return_rate": 0.09969213826245839
+        },
+        {
+          "value": "VIP",
+          "n": 100424,
+          "conversion": 0.7017446028837728,
+          "avg_net_profit": 113.11868278499162,
+          "aov": 402.0007382697364,
+          "return_rate": 0.09957779016968056
+        }
+      ]
+    }
+  },
+  "clv": {
+    "mean_profit_per_order": 112.78082957796191,
+    "retention": 0.8,
+    "horizon_years": 3,
+    "retention_factor": 1.9520000000000004,
+    "orders_per_year_base": 1.0,
+    "mean": 332.92900891414365,
+    "median": 277.6781793361817,
+    "p90": 524.4381793361817,
+    "claimed_rate_corr_with_profit": 0.0018570558222659802,
+    "scenarios": {
+      "conservative": 222.85491924605276,
+      "base": 332.9290089141436,
+      "optimistic": 553.0771882503253
+    }
+  },
+  "given_segment": [
+    {
+      "customer_segment": "Premium",
+      "n": 300404,
+      "avg_net_profit": 112.91352651762287,
+      "loyalty": 49.97450966032409,
+      "claimed_orders": 25.45395201129146
+    },
+    {
+      "customer_segment": "Regular",
+      "n": 599295,
+      "avg_net_profit": 112.65769946353635,
+      "loyalty": 49.99330646843376,
+      "claimed_orders": 25.508153747319767
+    },
+    {
+      "customer_segment": "VIP",
+      "n": 100424,
+      "avg_net_profit": 113.11868278499166,
+      "loyalty": 49.842567513741756,
+      "claimed_orders": 25.45957141719111
+    }
+  ]
+}

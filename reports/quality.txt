@@ -1,0 +1,16 @@
+rows in=1,000,123 out=1,000,123 cols=72
+customer_key distinct: 1000122 (customer_id distinct: 991945 )
+customers with >1 order: 1 | max orders: 2
+flag_order_id_dup: 16,333 (1.63%)
+flag_customer_id_reused: 16,307 (1.63%)
+flag_status_conflict: 232,508 (23.25%)
+is_realized_sale: 800,111 (80.00%)
+is_positive_purchase: 700,232 (70.01%)
+is_returned: 99,879 (9.99%)
+is_cancelled: 50,163 (5.02%)
+is_payment_failed: 49,972 (5.00%)
+any flag_status_conflict or dup rows: 245004
+items: 48
+realized revenue USD: 322654541
+realized profit USD: 128780871
+nulls remaining: {}

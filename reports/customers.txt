@@ -1,0 +1,137 @@
+customers (one row each): 1,000,123
+
+== VALUE TIERS ==
+ shape: (4, 6)
+┌───────────────────┬───────────┬──────────┬────────────┬──────────────┬────────────────┐
+│ value_tier        ┆ customers ┆ profit   ┆ avg_profit ┆ profit_share ┆ customer_share │
+│ ---               ┆ ---       ┆ ---      ┆ ---        ┆ ---          ┆ ---            │
+│ str               ┆ u32       ┆ f64      ┆ f64        ┆ f64          ┆ f64            │
+╞═══════════════════╪═══════════╪══════════╪════════════╪══════════════╪════════════════╡
+│ Top 10%           ┆ 100008    ┆ 4.7845e7 ┆ 478.412585 ┆ 0.424178     ┆ 0.099996       │
+│ High value        ┆ 400043    ┆ 5.8553e7 ┆ 146.366104 ┆ 0.519109     ┆ 0.399994       │
+│ Standard          ┆ 200181    ┆ 6.3969e6 ┆ 31.955483  ┆ 0.056713     ┆ 0.200156       │
+│ No realised value ┆ 299891    ┆ 0.0      ┆ 0.0        ┆ 0.0          ┆ 0.299854       │
+└───────────────────┴───────────┴──────────┴────────────┴──────────────┴────────────────┘
+high-value threshold (top 10% of all customers) net profit >= $304.29; they generate 42.4% of net profit
+Pareto (top x% of customers -> share of net profit): {1: '7.9%', 5: '26.6%', 10: '42.4%', 20: '63.9%', 50: '94.3%'}
+
+== HIGH-VALUE vs OTHERS: mean of order mechanics ==
+shape: (2, 8)
+┌────────────┬──────────┬────────────┬────────────┬───────────┬────────────┬───────────┬───────────┐
+│ is_high_va ┆ quantity ┆ unit_price ┆ discount_p ┆ age       ┆ customer_l ┆ tenure_da ┆ fraud_ris │
+│ lue        ┆ ---      ┆ _usd       ┆ ercent     ┆ ---       ┆ oyalty_sco ┆ ys        ┆ k_score   │
+│ ---        ┆ f64      ┆ ---        ┆ ---        ┆ f64       ┆ re         ┆ ---       ┆ ---       │
+│ bool       ┆          ┆ f64        ┆ f64        ┆           ┆ ---        ┆ f64       ┆ f64       │
+│            ┆          ┆            ┆            ┆           ┆ f64        ┆           ┆           │
+╞════════════╪══════════╪════════════╪════════════╪═══════════╪════════════╪═══════════╪═══════════╡
+│ false      ┆ 2.866596 ┆ 131.73474  ┆ 8.811295   ┆ 46.488546 ┆ 49.959029  ┆ 731.38603 ┆ 49.955376 │
+│            ┆          ┆            ┆            ┆           ┆            ┆ 8         ┆           │
+│ true       ┆ 4.174297 ┆ 284.552411 ┆ 5.698659   ┆ 46.544469 ┆ 50.093981  ┆ 729.25045 ┆ 50.017724 │
+│            ┆          ┆            ┆            ┆           ┆            ┆ 7         ┆           │
+└────────────┴──────────┴────────────┴────────────┴───────────┴────────────┴───────────┴───────────┘
+share of high-value by category: [{'category': 'Clothing', 'is_high_value': 0.0104}, {'category': 'Electronics', 'is_high_value': 0.2481}, {'category': 'Health', 'is_high_value': 0.0396}, {'category': 'Home', 'is_high_value': 0.1211}, {'category': 'Sports', 'is_high_value': 0.0805}]
+share of high-value by given customer_segment: [{'customer_segment': 'Premium', 'is_high_value': 0.1004}, {'customer_segment': 'Regular', 'is_high_value': 0.0997}, {'customer_segment': 'VIP', 'is_high_value': 0.1007}]
+
+AUC predicting 'top 10% value' from customer attributes only (age, loyalty, tenure, session, pages, fraud): 0.504 (0.5 = no signal)
+
+== CLUSTERING (MiniBatchKMeans on standardised order + profile features) ==
+silhouette by k (1 = perfect, ~0 = no structure): {3: 0.07, 4: 0.065, 5: 0.067, 6: 0.068, 8: 0.069}
+shape: (4, 13)
+┌───────────┬──────────┬────────────┬──────────┬───────────┬───────────┬────────────┬───────────┬───────────┬───────────┬────────────────┬─────────────┬───────────────────────────┐
+│ customers ┆ qty      ┆ price      ┆ disc     ┆ age       ┆ loyalty   ┆ tenure_d   ┆ fraud     ┆ session   ┆ pages     ┆ avg_net_profit ┆ return_rate ┆ cluster                   │
+│ ---       ┆ ---      ┆ ---        ┆ ---      ┆ ---       ┆ ---       ┆ ---        ┆ ---       ┆ ---       ┆ ---       ┆ ---            ┆ ---         ┆ ---                       │
+│ u32       ┆ f64      ┆ f64        ┆ f64      ┆ f64       ┆ f64       ┆ f64        ┆ f64       ┆ f64       ┆ f64       ┆ f64            ┆ f64         ┆ str                       │
+╞═══════════╪══════════╪════════════╪══════════╪═══════════╪═══════════╪════════════╪═══════════╪═══════════╪═══════════╪════════════════╪═════════════╪═══════════════════════════╡
+│ 242622    ┆ 3.38731  ┆ 175.037633 ┆ 10.02102 ┆ 52.777172 ┆ 28.104232 ┆ 650.073769 ┆ 44.837068 ┆ 20.536461 ┆ 12.894206 ┆ 144.762158     ┆ 0.099134    ┆ Cluster A (highest value) │
+│ 246521    ┆ 3.366837 ┆ 155.31654  ┆ 7.836249 ┆ 44.305706 ┆ 73.675796 ┆ 894.836829 ┆ 46.77203  ┆ 19.55412  ┆ 8.204372  ┆ 135.448882     ┆ 0.099424    ┆ Cluster B                 │
+│ 259494    ┆ 2.538271 ┆ 170.870847 ┆ 8.517461 ┆ 52.338513 ┆ 57.511386 ┆ 586.500177 ┆ 41.029563 ┆ 46.014859 ┆ 9.584229  ┆ 111.171054     ┆ 0.100241    ┆ Cluster C                 │
+│ 251486    ┆ 2.732709 ┆ 87.233358  ┆ 7.665337 ┆ 36.547311 ┆ 40.055811 ┆ 798.258623 ┆ 67.24861  ┆ 34.874344 ┆ 11.409653 ┆ 61.367241      ┆ 0.100622    ┆ Cluster D (lowest value)  │
+└───────────┴──────────┴────────────┴──────────┴───────────┴───────────┴────────────┴───────────┴───────────┴───────────┴────────────────┴─────────────┴───────────────────────────┘
+variance explained by cluster (eta^2): {'session_duration_minutes': 0.417, 'customer_loyalty_score': 0.352, 'log_price': 0.169, 'age': 0.159, 'fraud_risk_score': 0.126, 'pages_visited': 0.094, 'tenure_days': 0.076, 'quantity': 0.071, 'discount_percent': 0.015}
+
+== BEHAVIOUR: does it change conversion or value? (chi-square / ANOVA p-values) ==
+device_type            conversion p=0.288 | net-profit ANOVA p=0.607 | profit spread max-min=0.3%
+campaign_source        conversion p=0.408 | net-profit ANOVA p=0.577 | profit spread max-min=0.7%
+traffic_source         conversion p=0.030 | net-profit ANOVA p=0.122 | profit spread max-min=1.1%
+coupon_used            conversion p=0.974 | net-profit ANOVA p=0.635 | profit spread max-min=0.1%
+abandoned_cart_before  conversion p=0.369 | net-profit ANOVA p=0.296 | profit spread max-min=0.3%
+is_weekend             conversion p=0.094 | net-profit ANOVA p=0.711 | profit spread max-min=0.1%
+gender                 conversion p=0.658 | net-profit ANOVA p=0.970 | profit spread max-min=0.0%
+country                conversion p=0.699 | net-profit ANOVA p=0.628 | profit spread max-min=1.3%
+customer_segment       conversion p=0.399 | net-profit ANOVA p=0.582 | profit spread max-min=0.4%
+
+age bands:
+ shape: (5, 4)
+┌────────────┬────────┬──────────┬────────────────┐
+│ b          ┆ n      ┆ conv     ┆ avg_net_profit │
+│ ---        ┆ ---    ┆ ---      ┆ ---            │
+│ enum       ┆ u32    ┆ f64      ┆ f64            │
+╞════════════╪════════╪══════════╪════════════════╡
+│ [-inf, 30) ┆ 206707 ┆ 0.699841 ┆ 112.477896     │
+│ [30, 40)   ┆ 172674 ┆ 0.699619 ┆ 112.545849     │
+│ [40, 50)   ┆ 172550 ┆ 0.699913 ┆ 112.794414     │
+│ [50, 60)   ┆ 172408 ┆ 0.701255 ┆ 113.078829     │
+│ [60, inf)  ┆ 275784 ┆ 0.700157 ┆ 112.960217     │
+└────────────┴────────┴──────────┴────────────────┘
+
+pages_visited bands:
+ shape: (4, 4)
+┌───────────┬────────┬──────────┬────────────────┐
+│ b         ┆ n      ┆ conv     ┆ avg_net_profit │
+│ ---       ┆ ---    ┆ ---      ┆ ---            │
+│ enum      ┆ u32    ┆ f64      ┆ f64            │
+╞═══════════╪════════╪══════════╪════════════════╡
+│ [-inf, 5) ┆ 199576 ┆ 0.699859 ┆ 112.641035     │
+│ [5, 10)   ┆ 249960 ┆ 0.70082  ┆ 113.083106     │
+│ [10, 15)  ┆ 250302 ┆ 0.699159 ┆ 112.506983     │
+│ [15, inf) ┆ 300285 ┆ 0.700598 ┆ 112.850387     │
+└───────────┴────────┴──────────┴────────────────┘
+
+session_duration_minutes bands:
+ shape: (4, 4)
+┌────────────┬────────┬──────────┬────────────────┐
+│ b          ┆ n      ┆ conv     ┆ avg_net_profit │
+│ ---        ┆ ---    ┆ ---      ┆ ---            │
+│ enum       ┆ u32    ┆ f64      ┆ f64            │
+╞════════════╪════════╪══════════╪════════════════╡
+│ [-inf, 15) ┆ 236731 ┆ 0.701674 ┆ 113.391985     │
+│ [15, 30)   ┆ 253427 ┆ 0.699444 ┆ 112.697113     │
+│ [30, 45)   ┆ 254801 ┆ 0.700327 ┆ 112.576914     │
+│ [45, inf)  ┆ 255164 ┆ 0.699244 ┆ 112.500596     │
+└────────────┴────────┴──────────┴────────────────┘
+
+customer_loyalty_score bands:
+ shape: (4, 4)
+┌────────────┬────────┬──────────┬────────────────┐
+│ b          ┆ n      ┆ conv     ┆ avg_net_profit │
+│ ---        ┆ ---    ┆ ---      ┆ ---            │
+│ enum       ┆ u32    ┆ f64      ┆ f64            │
+╞════════════╪════════╪══════════╪════════════════╡
+│ [-inf, 25) ┆ 250377 ┆ 0.700352 ┆ 113.059895     │
+│ [25, 50)   ┆ 249381 ┆ 0.699087 ┆ 112.185113     │
+│ [50, 75)   ┆ 249633 ┆ 0.699287 ┆ 112.623823     │
+│ [75, inf)  ┆ 250732 ┆ 0.701849 ┆ 113.250984     │
+└────────────┴────────┴──────────┴────────────────┘
+
+== CLV PROXY ==
+Each customer has exactly one order, so BG/NBD or Gamma-Gamma cannot be fitted. A transparent scenario proxy is used:
+  CLV_3y = realised net profit + mean net profit per order x ORDERS_PER_YEAR x sum(r^t, t=1..3), r=0.8
+  total_orders_by_customer was NOT used: it averages 25.5 orders per customer, contradicting the 1-order reality, and its derived order rate has correlation 0.0019 with actual profit (noise).
+  mean net profit per order $112.78; retention factor 1.952; base scenario orders/year=1.0
+  scenario conservative orders/year=0.5: mean CLV $222.85
+  scenario base         orders/year=1.0: mean CLV $332.93
+  scenario optimistic   orders/year=2.0: mean CLV $553.08
+  base CLV proxy: mean $332.93; median $277.68; p90 $524.44
+  CLV proxy by given customer_segment: [{'customer_segment': 'Premium', 'mean_clv': 333.0617058538068, 'n': 300404}, {'customer_segment': 'Regular', 'mean_clv': 332.80587879972, 'n': 599295}, {'customer_segment': 'VIP', 'mean_clv': 333.26686212117227, 'n': 100424}]
+
+== IS THE GIVEN customer_segment LABEL MEANINGFUL? ==
+ shape: (3, 5)
+┌──────────────────┬────────┬────────────────┬───────────┬────────────────┐
+│ customer_segment ┆ n      ┆ avg_net_profit ┆ loyalty   ┆ claimed_orders │
+│ ---              ┆ ---    ┆ ---            ┆ ---       ┆ ---            │
+│ str              ┆ u32    ┆ f64            ┆ f64       ┆ f64            │
+╞══════════════════╪════════╪════════════════╪═══════════╪════════════════╡
+│ Premium          ┆ 300404 ┆ 112.913527     ┆ 49.97451  ┆ 25.453952      │
+│ Regular          ┆ 599295 ┆ 112.657699     ┆ 49.993306 ┆ 25.508154      │
+│ VIP              ┆ 100424 ┆ 113.118683     ┆ 49.842568 ┆ 25.459571      │
+└──────────────────┴────────┴────────────────┴───────────┴────────────────┘

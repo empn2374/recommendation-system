@@ -1,0 +1,14 @@
+- Electronics generates 34.8% of net profit from 20.0% of orders; Clothing generates 11.2% from 20.0%.
+- Within a category the 48 items are statistically indistinguishable (best vs. worst item differs by only 1% to 3%, ANOVA p between 0.5 and 0.9); category is the real unit of performance.
+- Campaign sources are within 0.8% of each other on net profit per order (Affiliate best, Google Ads worst; conversion p=0.41): no channel is meaningfully better.
+- Discounts do not lift conversion (p=0.49) but cut margin from 45.0% at 0% off to 26.7% at 25% off.
+- Monthly order volume is flat (coefficient of variation 2.5% over full months) with no seasonality, and orders are uniform across hours (chi-square p=0.52). Weekday volume differs by only 1.1% (Sat/Sun slightly higher).
+- Returns: 10.0% of orders, $16.0M profit lost. The five reasons are evenly split (19.8% to 20.1% each). Return rate does not differ significantly by category (p=0.21), shipping method (p=0.92), customer segment (p=0.62), quantity (p=0.23).
+- The only detectable return driver is payment method (p<0.001), but the effect is small: PayPal 9.7% vs Bank Transfer 10.2% (0.5 points). With 1M rows even tiny gaps are significant, so effect size matters more than p-values.
+- Fraud score looks uniform 0 to 100: 20.0% of orders score 80+. Return rate varies by at most 0.2 points across fraud bands (p=0.05), so the score is a policy filter, not a validated risk signal.
+- Opportunity: Cap discounts at 10%: about $8.8M (Conversion stays unchanged. This must be validated with an A/B test before rollout.)
+- Opportunity: Reduce returns by 20%: about $3.2M (Returns fall 20% overall. The two fixable reasons are about 40% of returns, so this needs half of those removed.)
+- Opportunity: Clear Pending/Processing orders that are already paid: about $13.4M (These are genuine orders. Status conflicts (23% of rows) suggest a data issue, so check them first.)
+- Opportunity: Recover 25% of failed payments: about $1.3M (A retry or alternative payment flow converts 25%.)
+- Opportunity: Shift 10% of Clothing demand towards Electronics via recommendations: about $1.9M (Customers accept the cross-category suggestion. Phase 2 measured +22% profit captured at lambda=0.25 without losing hit rate.)
+- Express, Next Day, Standard and Economy shipping all average about 7.5 delivery days: the shipping method does not change delivery time in this data.

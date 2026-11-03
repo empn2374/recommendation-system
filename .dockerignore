@@ -1,0 +1,14 @@
+**
+!Dockerfile
+!requirements-api.txt
+!api/
+!api/**
+!src/
+!src/**
+!artifacts/
+!artifacts/**
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/.env
+**/.env.*
